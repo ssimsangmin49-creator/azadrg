@@ -75,6 +75,42 @@
     a:hover {
       text-decoration: underline;
     }
+
+    .lightbox { position: fixed; inset: 0; display: none; z-index: 9999; }
+.lightbox.is-open { display: block; }
+
+.lightbox__backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.75); }
+
+.lightbox__content{
+  position: relative;
+  max-width: min(900px, 92vw);
+  max-height: 88vh;
+  margin: 6vh auto 0;
+  background: rgba(15,23,42,0.95);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.lightbox__content img{
+  width: 100%;
+  max-height: 78vh;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
+}
+
+.lightbox__close{
+  position: absolute;
+  top: 8px; right: 10px;
+  width: 36px; height: 36px;
+  border: none; border-radius: 10px;
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
   </style>
 </head>
 
@@ -106,7 +142,9 @@
       the incineration heat circulates downward within the incinerator.
       <a href="#" class="img-link" data-img="images/central-rod.png">View Image</a>
       
-      <!-- ✅ 팝업(라이트박스) -->
+     </p>
+    
+     <!-- ✅ 팝업(라이트박스) -->
 <div id="lightbox" class="lightbox" aria-hidden="true">
   <div class="lightbox__backdrop"></div>
 
@@ -115,7 +153,6 @@
     <img id="lightboxImg" src="" alt="Preview" />
   </div>
 </div>
-    </p>
 
     <h2>Air Blower</h2>
 
@@ -162,6 +199,7 @@
 
 </body>
 </html>
+
 
 
 
