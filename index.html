@@ -349,10 +349,20 @@
       Last update: <span id="lastUpdate"></span>
       </p>
     </footer>
+    <script>
+  const today = new Date();
+  const formatted = today.getFullYear() + "-" +
+    String(today.getMonth() + 1).padStart(2, "0") + "-" +
+    String(today.getDate()).padStart(2, "0");
+
+  document.getElementById("lastUpdate").textContent = formatted;
+</script>
+
 
   </main>
 </body>
 </html>
+
 
 
 
