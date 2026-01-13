@@ -440,7 +440,7 @@
         const yyyy = m?.[1], mm = m?.[2], dd = m?.[3], slug = m?.[4];
 
         // Jekyll 기본 포스트 URL (pretty permalink 고려)
-        const url = `${BLOG_BASE}/${yyyy}/${mm}/${dd}/${slug}/`;
+       const url = `${BLOG_BASE}/${yyyy}/${mm}/${dd}/${slug}.html`;
 
         // front matter에서 title 읽기
         let title = slug ? slug.replace(/-/g, " ") : f.name;
@@ -463,3 +463,4 @@
   </script>
 </body>
 </html>
+
