@@ -368,8 +368,38 @@
 
 
   </main>
+  <script>
+(async function () {
+  const FEED_URL = "/blog/feed.xml";
+  const MAX_POSTS = 3;
+
+  const list = document.getElementById("posts-list");
+  try {
+    const res = await fetch(FEED_URL, { cache: "no-store" });
+    if (!res.ok) throw new Error(res.status);
+
+    const xmlText = await res.text();
+    const xml = new DOMParser().parseFromString(xmlText, "application/xml");
+    const items = Array.from(xml.querySelectorAll("entry, item")).slice(0, MAX_POSTS);
+
+    list.innerHTML = items.map(item => {
+      const title = item.querySelector("title")?.textContent || "Untitled";
+      const linkEl = item.querySelector("link");
+      const link = linkEl?.getAttribute("href") || linkEl?.textContent || "#";
+      const dateText = item.querySelector("updated, pubDate")?.textContent || "";
+      const date = dateText ? new Date(dateText) : null;
+      const dateLabel = date && !isNaN(date) ? date.toISOString().slice(0,10) : "";
+      return `<li><a href="${link}">${title}</a> ${dateLabel ? `<small>(${dateLabel})</small>` : ""}</li>`;
+    }).join("");
+  } catch (e) {
+    list.innerHTML = "<li>Failed to load posts.</li>";
+  }
+})();
+</script>
+
 </body>
 </html>
+
 
 
 
