@@ -470,7 +470,8 @@
       const m = f.name.match(/^(\d{4})-(\d{2})-(\d{2})-(.+)\.md$/);
       const yyyy = m?.[1], mm = m?.[2], dd = m?.[3], slug = m?.[4];
 
-      const url = buildPostUrl(mode, yyyy, mm, dd, slug);
+      const url = `${BLOG_BASE}/blog/${yyyy}/${mm}/${dd}/${slug}.html`;
+
 
       // front matter title 읽기
       let title = slug ? slug.replace(/-/g, " ") : f.name;
@@ -495,6 +496,7 @@
 
 </body>
 </html>
+
 
 
 
