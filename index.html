@@ -237,6 +237,14 @@
       .page-link { padding: 0.95rem 0.9rem; }
       .icon { font-size: 1.45rem; }
     }
+    .latest-subtitle {
+  margin-top: -6px;
+  margin-left: 28px;     /* 👉 오른쪽으로 살짝 */
+  font-size: 0.85rem;    /* 👉 글자 작게 */
+  color: #c7cbd6;        /* 👉 은은하게 */
+  opacity: 0.85;
+}
+
   </style>
 </head>
 
@@ -297,11 +305,12 @@
           </a>
         </li>
       </ul>
-      <section id="latest-posts">
-  <h2>Latest Blog Posts</h2>
-  <ul id="posts-list">
-    <li>Loading...</li>
-  </ul>
+      <h2>Latest Blog Posts</h2>
+<p class="latest-subtitle">📝 Recent updates from the blog</p>
+<ul id="posts-list">
+  <li>Loading...</li>
+</ul>
+
 </section>
     </section>
 
@@ -399,6 +408,7 @@
 
 </body>
 </html>
+
 
 
 
