@@ -410,9 +410,10 @@
 
   </main>
 
-  <!-- ✅ Latest posts loader (GitHub API 방식: CORS 문제 없음) -->
+  <!-- ✅ Latest posts loader (permalink 기반: permalink 있으면 100% 그 링크로 연결) -->
 <script>
 (async function () {
+  // ===== 설정 =====
   const OWNER = "ssimsangmin49-creator";
   const REPO  = "ecofriendly-polymer-compounds-incineration";
   const POSTS_PATH = "_posts";
@@ -420,82 +421,110 @@
   const MAX_POSTS = 3;
 
   const list = document.getElementById("posts-list");
+  if (!list) return;
 
-  // ✅ permalink를 자동 감지해서 URL 생성 방식 결정
-  async function detectPermalinkMode() {
-    try {
-      const cfgApi = `https://api.github.com/repos/${OWNER}/${REPO}/contents/_config.yml?ref=main`;
-      const cfgRes = await fetch(cfgApi, { cache: "no-store" });
-      if (!cfgRes.ok) return "auto";
-      const cfg = await cfgRes.json();
-      if (!cfg.download_url) return "auto";
-      const text = await fetch(cfg.download_url, { cache: "no-store" }).then(r => r.text());
-
-      // permalink: pretty  또는 permalink: /:year/:month/:day/:title/
-      const m = text.match(/^\s*permalink:\s*(.+)\s*$/m);
-      const val = (m?.[1] || "").trim().replace(/^["']|["']$/g, "");
-
-      if (!val) return "auto";
-      if (val === "pretty") return "slash";
-      if (val.includes(".html")) return "html";
-      if (val.endsWith("/")) return "slash";
-      return "auto";
-    } catch {
-      return "auto";
-    }
+  // ===== 유틸 =====
+  function esc(s) {
+    return String(s ?? "").replace(/[&<>"']/g, m => ({
+      "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+    }[m]));
   }
 
-  function buildPostUrl(mode, yyyy, mm, dd, slug) {
-    // GitHub Pages 기본값(대부분): /YYYY/MM/DD/slug.html
-    if (mode === "html" || mode === "auto") {
-      return `${BLOG_BASE}/${yyyy}/${mm}/${dd}/${slug}.html`;
-    }
-    // pretty: /YYYY/MM/DD/slug/
-    return `${BLOG_BASE}/${yyyy}/${mm}/${dd}/${slug}/`;
+  function parseFrontMatter(mdText) {
+    // --- ... --- 영역 파싱
+    const fmMatch = mdText.match(/^---\s*[\r\n]+([\s\S]*?)\r?\n---\s*[\r\n]*/);
+    const fm = fmMatch ? fmMatch[1] : "";
+    const get = (key) => {
+      const m = fm.match(new RegExp("^\\s*" + key + "\\s*:\\s*(.+)\\s*$", "m"));
+      if (!m) return "";
+      return m[1].trim().replace(/^["']|["']$/g, "");
+    };
+    return {
+      title: get("title"),
+      permalink: get("permalink")
+    };
   }
+
+  function parseFromFilename(name) {
+    // YYYY-MM-DD-slug.md
+    const m = name.match(/^(\d{4})-(\d{2})-(\d{2})-(.+)\.md$/);
+    if (!m) return null;
+    return { yyyy: m[1], mm: m[2], dd: m[3], slug: m[4] };
+  }
+
+  function formatDate(yyyy, mm, dd) {
+    return `${yyyy}-${mm}-${dd}`;
+  }
+
+  function normalizeUrl(permalinkOrPath) {
+    // permalink가 "/waste-to-energy/" 형태면 BLOG_BASE + 그대로
+    // permalink가 "waste-to-energy/" 형태면 "/" 붙여서
+    const p = String(permalinkOrPath || "").trim();
+    if (!p) return "";
+    if (p.startsWith("http://") || p.startsWith("https://")) return p;
+    return BLOG_BASE + (p.startsWith("/") ? p : "/" + p);
+  }
+
+  // ===== 실행 =====
+  list.innerHTML = `<li>Loading posts...</li>`;
 
   try {
-    const mode = await detectPermalinkMode();
-
     const api = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${POSTS_PATH}?ref=main`;
     const res = await fetch(api, { cache: "no-store" });
-    if (!res.ok) throw new Error(res.status);
+    if (!res.ok) throw new Error(`GitHub API error: ${res.status}`);
 
     const files = (await res.json())
       .filter(x => x.type === "file" && x.name.endsWith(".md"))
+      // 최신 글 우선(파일명 날짜 기준)
       .sort((a, b) => b.name.localeCompare(a.name))
       .slice(0, MAX_POSTS);
 
-    const itemsHtml = await Promise.all(files.map(async (f) => {
-      const m = f.name.match(/^(\d{4})-(\d{2})-(\d{2})-(.+)\.md$/);
-      const yyyy = m?.[1], mm = m?.[2], dd = m?.[3], slug = m?.[4];
+    if (!files.length) {
+      list.innerHTML = `<li>No posts found.</li>`;
+      return;
+    }
 
-      const url = `${BLOG_BASE}/blog/${yyyy}/${mm}/${dd}/${slug}.html`;
+    const items = await Promise.all(files.map(async (f) => {
+      const info = parseFromFilename(f.name);
+      // 파일명이 규칙 아니면 스킵(혹은 그냥 표시)
+      if (!info) return null;
 
+      // md 원문 가져와서 front matter에서 title/permalink 읽기
+      const md = await fetch(f.download_url, { cache: "no-store" }).then(r => r.text());
+      const fm = parseFrontMatter(md);
 
-      // front matter title 읽기
-      let title = slug ? slug.replace(/-/g, " ") : f.name;
-      if (f.download_url) {
-        const txt = await fetch(f.download_url, { cache: "no-store" }).then(r => r.text());
-        const t = txt.match(/^\s*title:\s*(.+)\s*$/m);
-        if (t) title = t[1].replace(/^["']|["']$/g, "");
-      }
+      const title = fm.title || info.slug.replace(/-/g, " ");
+      const permalink = fm.permalink; // 이게 핵심
+      const url = normalizeUrl(permalink);
 
-      const dateLabel = (yyyy && mm && dd) ? `${yyyy}-${mm}-${dd}` : "";
+      // permalink가 없으면 (보험용) 기본 Jekyll pretty 링크로 fallback
+      const fallbackUrl = `${BLOG_BASE}/${info.yyyy}/${info.mm}/${info.dd}/${info.slug}/`;
+      const finalUrl = url || fallbackUrl;
 
-      return `<li><a href="${url}" target="_blank" rel="noopener">${title}</a>${dateLabel ? ` <small>(${dateLabel})</small>` : ""}</li>`;
+      const dateStr = formatDate(info.yyyy, info.mm, info.dd);
+
+      return `
+        <li>
+          <a href="${esc(finalUrl)}" target="_blank" rel="noopener">
+            ${esc(title)}
+          </a>
+          <span style="opacity:.7; font-size:0.9em; margin-left:.5em;">${esc(dateStr)}</span>
+        </li>
+      `;
     }));
 
-    list.innerHTML = itemsHtml.join("");
+    const html = items.filter(Boolean).join("");
+    list.innerHTML = html || `<li>No valid posts.</li>`;
   } catch (e) {
-    list.innerHTML = "<li>Failed to load posts.</li>";
+    console.error(e);
+    list.innerHTML = `<li>Failed to load posts.</li>`;
   }
 })();
 </script>
 
-
 </body>
 </html>
+
 
 
 
