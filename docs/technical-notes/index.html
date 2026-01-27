@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical Notes | AZADrg</title>
+
+  <style>
+    :root {
+      --bg: #0b1220;
+      --panel: rgba(17, 24, 39, 0.65);
+      --border: rgba(255,255,255,0.08);
+      --text-main: #e5e7eb;
+      --text-sub: #cbd5e1;
+      --text-muted: #94a3b8;
+      --accent: #60a5fa;
+      --warning: #fbbf24;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Georgia", "Times New Roman", serif;
+      background: radial-gradient(1200px 700px at 10% 10%, rgba(96,165,250,0.08), transparent 60%),
+                  radial-gradient(1200px 700px at 90% 30%, rgba(251,191,36,0.06), transparent 55%),
+                  var(--bg);
+      color: var(--text-main);
+      line-height: 1.75;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 20px 80px;
+    }
+
+    header {
+      margin-bottom: 40px;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--text-sub);
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.03);
+      padding: 6px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--warning);
+      box-shadow: 0 0 0 4px rgba(251,191,36,0.15);
+    }
+
+    h1 {
+      font-size: 30px;
+      color: #f9fafb;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: var(--text-sub);
+      max-width: 760px;
+    }
+
+    section {
+      margin-top: 42px;
+      padding: 26px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: var(--panel);
+    }
+
+    section h2 {
+      font-size: 18px;
+      margin-bottom: 12px;
+      color: #f9fafb;
+    }
+
+    section p {
+      font-size: 15px;
+      color: var(--text-main);
+    }
+
+    ul {
+      margin-top: 14px;
+      margin-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: var(--text-sub);
+      font-size: 14px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .note {
+      margin-top: 18px;
+      padding: 14px 16px;
+      border-left: 3px solid var(--warning);
+      background: rgba(251,191,36,0.08);
+      border-radius: 12px;
+      font-size: 14px;
+      color: var(--text-sub);
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+
+    <header>
+      <div class="status">
+        <span class="dot"></span>
+        Technical reference · Living documents
+      </div>
+
+      <h1>Technical Notes</h1>
+
+      <p class="subtitle">
+        This section contains technical reference notes that support field trials
+        and community-based validation.  
+        These documents are not marketing material, nor finalized specifications.
+        They are working notes intended to be read, questioned, and reused.
+      </p>
+    </header>
+
+    <section>
+      <h2>Scope of these notes</h2>
+      <p>
+        The documents collected here describe technical considerations,
+        operational boundaries, and design principles related to appropriate
+        incineration approaches.
+      </p>
+
+      <ul>
+        <li>Combustion and airflow principles</li>
+        <li>Operational constraints and failure modes</li>
+        <li>Emission-related considerations and limits</li>
+        <li>Measurement assumptions and uncertainties</li>
+        <li>Practical safety and maintenance observations</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Available notes</h2>
+      <ul>
+        <li>
+          <a href="never-do.md">Never-Do List for Field Trials</a>  
+          <br />
+          <span style="color:#94a3b8;font-size:13px;">
+            Practices and assumptions that should be avoided in community trials.
+          </span>
+        </li>
+      </ul>
+
+      <div class="note">
+        This list will grow over time.  
+        Each note may be revised as field experience accumulates.
+      </div>
+    </section>
+
+    <section>
+      <h2>Relationship to field trials</h2>
+      <p>
+        These technical notes exist to support transparent field trials.
+        They provide context for decisions made during trials and help others
+        understand not only <em>what</em> was done, but <em>why</em>.
+      </p>
+
+      <p style="margin-top:12px;">
+        For ongoing or planned trials, see:
+        <a href="../../trial.html">🧪 Field Trial / Community Trial</a>
+      </p>
+    </section>
+
+    <footer>
+      <div>AZADrg · Technical Notes</div>
+      <提醒>
+      <div>Documents are open, revisable, and non-commercial by intent.</div>
+    </footer>
+
+  </main>
+</body>
+</html>
