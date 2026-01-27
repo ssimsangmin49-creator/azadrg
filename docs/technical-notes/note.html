@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical Note | AZADrg</title>
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --panel:rgba(17,24,39,0.72);
+      --border:rgba(255,255,255,0.10);
+      --text:#e5e7eb;
+      --muted:#94a3b8;
+      --sub:#cbd5e1;
+      --accent:#60a5fa;
+      --warn:#fbbf24;
+      --shadow:0 14px 34px rgba(0,0,0,0.40);
+      --radius:18px;
+      --max:980px;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+
+    body{
+      font-family:"Georgia","Times New Roman",serif;
+      background:
+        radial-gradient(1200px 700px at 12% 10%, rgba(96,165,250,0.10), transparent 60%),
+        radial-gradient(1200px 700px at 90% 30%, rgba(251,191,36,0.07), transparent 55%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.75;
+    }
+
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    .wrap{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:44px 18px 70px;
+    }
+
+    .top{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:14px;
+      margin-bottom:18px;
+    }
+
+    .crumb{
+      color:var(--muted);
+      font-size:13px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,0.03);
+      padding:7px 12px;
+      border-radius:999px;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      white-space:nowrap;
+    }
+
+    .dot{
+      width:9px;height:9px;border-radius:50%;
+      background:var(--warn);
+      box-shadow:0 0 0 4px rgba(251,191,36,0.15);
+      flex:0 0 auto;
+    }
+
+    .actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content:flex-end;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 12px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,0.04);
+      color:#f9fafb;
+      font-size:13px;
+      cursor:pointer;
+      user-select:none;
+    }
+    .btn:hover{background:rgba(255,255,255,0.07);text-decoration:none}
+
+    .hero{
+      border:1px solid var(--border);
+      background:var(--panel);
+      border-radius:var(--radius);
+      padding:22px;
+      box-shadow:var(--shadow);
+      margin-bottom:16px;
+    }
+
+    h1{
+      font-size:28px;
+      color:#f9fafb;
+      letter-spacing:-0.2px;
+      line-height:1.25;
+      margin-bottom:8px;
+    }
+
+    .meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:10px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .pill{
+      border:1px solid var(--border);
+      background:rgba(255,255,255,0.03);
+      padding:6px 10px;
+      border-radius:999px;
+    }
+
+    .panel{
+      border:1px solid var(--border);
+      background:var(--panel);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:0;
+      overflow:hidden;
+    }
+
+    .panel-head{
+      padding:14px 18px;
+      border-bottom:1px solid var(--border);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      background:rgba(255,255,255,0.02);
+    }
+
+    .panel-title{
+      color:var(--sub);
+      font-size:13px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .file{
+      color:var(--muted);
+      font-size:12px;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+      max-width:60%;
+    }
+
+    .content{
+      padding:20px 22px 26px;
+      color:var(--text);
+      font-size:16px;
+    }
+
+    /* Rendered markdown styles */
+    .content h1,.content h2,.content h3{
+      color:#f9fafb;
+      margin:18px 0 10px;
+      line-height:1.35;
+    }
+    .content h2{font-size:20px}
+    .content h3{font-size:17px}
+
+    .content p{margin:10px 0;color:var(--text)}
+
+    .content ul,.content ol{margin:10px 0 10px 22px;color:var(--sub)}
+    .content li{margin:6px 0}
+
+    .content blockquote{
+      margin:14px 0;
+      padding:12px 14px;
+      border-left:3px solid rgba(96,165,250,0.75);
+      background:rgba(96,165,250,0.08);
+      border-radius:12px;
+      color:var(--sub);
+    }
+
+    .content code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: 0.92em;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 2px 6px;
+      border-radius: 8px;
+      color: #e2e8f0;
+    }
+
+    .content pre{
+      margin:14px 0;
+      padding:14px 14px;
+      background: rgba(0,0,0,0.25);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      overflow:auto;
+    }
+    .content pre code{
+      background: transparent;
+      border: none;
+      padding: 0;
+    }
+
+    .content hr{
+      border: none;
+      height: 1px;
+      background: rgba(255,255,255,0.10);
+      margin: 18px 0;
+    }
+
+    .content table{
+      width:100%;
+      border-collapse:collapse;
+      margin:14px 0;
+      font-size:14px;
+      color:var(--sub);
+    }
+    .content th,.content td{
+      border:1px solid rgba(255,255,255,0.10);
+      padding:10px 10px;
+      vertical-align:top;
+    }
+    .content th{
+      color:#f9fafb;
+      background: rgba(255,255,255,0.03);
+    }
+
+    .foot{
+      margin-top:18px;
+      color:var(--muted);
+      font-size:12px;
+      padding-top:14px;
+      border-top:1px solid rgba(255,255,255,0.10);
+    }
+
+    @media (max-width: 720px){
+      h1{font-size:24px}
+      .content{font-size:15px}
+      .file{max-width:52%}
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <div class="top">
+      <div class="crumb"><span class="dot"></span> Technical Notes · Viewer</div>
+      <div class="actions">
+        <a class="btn" href="index.html">← Notes index</a>
+        <a class="btn" id="rawLink" href="#" target="_blank" rel="noopener">Open raw .md</a>
+      </div>
+    </div>
+
+    <section class="hero">
+      <h1 id="title">Technical Note</h1>
+      <div class="meta">
+        <span class="pill">Non-commercial</span>
+        <span class="pill">Living document</span>
+        <span class="pill" id="updated">Updated: —</span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div class="panel-title">Rendered content</div>
+        <div class="file" id="fileName">—</div>
+      </div>
+      <article class="content" id="content">
+        Loading…
+      </article>
+    </section>
+
+    <div class="foot">
+      These notes are working references. They may change as field experience accumulates.
+    </div>
+  </main>
+
+  <!-- Tiny Markdown renderer (minimal, no external libs) -->
+  <script>
+    // Get file from query: note.html?file=never-do.md
+    const params = new URLSearchParams(location.search);
+    const file = params.get("file") || "never-do.md";
+
+    // Security: allow only local md filenames (no slashes)
+    const safe = /^[a-z0-9][a-z0-9\-_.]*\.md$/i;
+    const mdFile = safe.test(file) ? file : "never-do.md";
+
+    document.getElementById("fileName").textContent = mdFile;
+
+    // Set raw link (opens md directly)
+    const rawLink = document.getElementById("rawLink");
+    rawLink.href = mdFile;
+
+    // Minimal markdown to HTML (headings, lists, bold/italic, code, blockquote)
+    function escapeHtml(str){
+      return str.replace(/[&<>"']/g, s => ({
+        "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+      }[s]));
+    }
+
+    function renderMarkdown(md){
+      // Normalize line endings
+      md = md.replace(/\r\n/g, "\n");
+
+      // Fenced code blocks ``` ```
+      const codeBlocks = [];
+      md = md.replace(/```([\s\S]*?)```/g, (m, code) => {
+        const idx = codeBlocks.length;
+        codeBlocks.push(code);
+        return `@@CODEBLOCK_${idx}@@`;
+      });
+
+      // Inline escape first
+      let html = escapeHtml(md);
+
+      // Headings
+      html = html.replace(/^###\s(.+)$/gm, "<h3>$1</h3>");
+      html = html.replace(/^##\s(.+)$/gm, "<h2>$1</h2>");
+      html = html.replace(/^#\s(.+)$/gm, "<h1>$1</h1>");
+
+      // Blockquote
+      html = html.replace(/^\>\s(.+)$/gm, "<blockquote>$1</blockquote>");
+
+      // Horizontal rules
+      html = html.replace(/^\s*---\s*$/gm, "<hr>");
+
+      // Bold / italic
+      html = html.replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+      html = html.replace(/\*(.+?)\*/g, "<em>$1</em>");
+
+      // Unordered lists (simple)
+      html = html.replace(/(?:^|\n)(- .+(?:\n- .+)*)/g, (m, list) => {
+        const items = list.split("\n").map(x => x.replace(/^- /, "").trim());
+        return "\n<ul>" + items.map(i => `<li>${i}</li>`).join("") + "</ul>";
+      });
+
+      // Ordered lists (simple)
+      html = html.replace(/(?:^|\n)((?:\d+\.\s.+\n?)+)/g, (m, list) => {
+        const items = list.trim().split("\n").map(x => x.replace(/^\d+\.\s/, "").trim());
+        return "\n<ol>" + items.map(i => `<li>${i}</li>`).join("") + "</ol>";
+      });
+
+      // Paragraphs: split by blank lines, wrap non-block elements
+      const blocks = html.split(/\n{2,}/).map(b => b.trim()).filter(Boolean);
+      html = blocks.map(b => {
+        if (/^<(h1|h2|h3|ul|ol|pre|blockquote|hr|table)/.test(b)) return b;
+        return `<p>${b.replace(/\n/g, "<br>")}</p>`;
+      }).join("\n");
+
+      // Restore code blocks
+      html = html.replace(/@@CODEBLOCK_(\d+)@@/g, (_, n) => {
+        const code = escapeHtml(codeBlocks[Number(n)] || "");
+        return `<pre><code>${code.trim()}</code></pre>`;
+      });
+
+      return html;
+    }
+
+    async function load(){
+      try{
+        const res = await fetch(mdFile, { cache: "no-store" });
+        if(!res.ok) throw new Error("Failed to load: " + mdFile);
+        const text = await res.text();
+
+        // Title: first heading if present
+        const firstH1 = (text.match(/^#\s(.+)$/m) || [])[1];
+        document.getElementById("title").textContent = firstH1 ? `🧾 ${firstH1}` : "🧾 Technical Note";
+
+        document.getElementById("content").innerHTML = renderMarkdown(text);
+
+        // "Updated" from last-modified header if available
+        const lm = res.headers.get("last-modified");
+        if (lm){
+          const d = new Date(lm);
+          document.getElementById("updated").textContent =
+            "Updated: " + d.toLocaleDateString(undefined, {year:"numeric", month:"short", day:"2-digit"});
+        } else {
+          document.getElementById("updated").textContent = "Updated: —";
+        }
+      }catch(e){
+        document.getElementById("content").innerHTML =
+          `<p><b>Could not load the note.</b><br><span style="color:#94a3b8">${escapeHtml(String(e))}</span></p>`;
+      }
+    }
+
+    load();
+  </script>
+</body>
+</html>
