@@ -160,17 +160,7 @@
     </li>
       <li>
   <a href="https://ssimsangmin49-creator.github.io/ecofriendly-polymer-compounds-incineration/waste-to-energy/">WTE(Waste-to energy)</a>
-  </a>
-      
-    <!-- ✅ 팝업(라이트박스) -->
-<div id="lightbox" class="lightbox" aria-hidden="true">
-  <div class="lightbox__backdrop"></div>
-
-  <div class="lightbox__content" role="dialog" aria-modal="true">
-    <button class="lightbox__close" aria-label="Close">×</button>
-    <img id="lightboxImg" src="" alt="Preview" />
-  </div>
-</div>   
+  </a>       
       
 </li>
       <li>Remote areas where waste transport is not easy</li>
@@ -181,61 +171,10 @@
       <a href="index.html">← Back to Home</a>
     </p>
 
-  </div>
-   <script>
-  // querySelectorAll(".img-link") ...<script>
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightboxImg");
-
-  // lightbox가 페이지에 없으면 종료 (안전장치)
-  if (!lightbox || !lightboxImg) {
-    console.warn("Lightbox elements not found. Check #lightbox and #lightboxImg.");
-  } else {
-    const closeBtn = lightbox.querySelector(".lightbox__close");
-    const backdrop = lightbox.querySelector(".lightbox__backdrop");
-
-    function openLightbox(src) {
-      lightboxImg.src = src;
-      lightbox.classList.add("is-open");
-      lightbox.setAttribute("aria-hidden", "false");
-      document.body.style.overflow = "hidden";
-    }
-
-    function closeLightbox() {
-      lightbox.classList.remove("is-open");
-      lightbox.setAttribute("aria-hidden", "true");
-      lightboxImg.src = "";
-      document.body.style.overflow = "";
-    }
-
-    // "View Image" 링크들 클릭 처리
-    document.querySelectorAll(".img-link").forEach((link) => {
-      link.addEventListener("click", (e) => {
-        e.preventDefault();
-        const imgSrc = link.getAttribute("data-img");
-        if (!imgSrc) return;
-        openLightbox(imgSrc);
-      });
-    });
-
-    // 닫기 버튼/배경 클릭
-    if (closeBtn) closeBtn.addEventListener("click", closeLightbox);
-    if (backdrop) backdrop.addEventListener("click", closeLightbox);
-
-    // ESC로 닫기
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && lightbox.classList.contains("is-open")) {
-        closeLightbox();
-      }
-    });
-  }
-</script>
-
-</script>
-
-
+  
 </body>
 </html>
+
 
 
 
