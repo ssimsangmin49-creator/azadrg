@@ -22,3 +22,21 @@ If multiple cans of butane or isobutane gas explode simultaneously inside an inc
 the effect is similar to detonating a bomb inside the incinerator, causing a significant shock to  
 the refractory material supporting the incinerator interior. 
 Ultimately, this can render the incinerator unusable.
+
+## Real field case
+
+The incinerator introduced here has an internal diameter of less than 2,500 mm.  
+When the top lid of this type of incinerator is closed and the waste is fed into the inlet,  
+the volume is limited by the size of the inlet. This was the case.  
+
+Most of the collected waste was contained in black plastic bags. The bags varied in size. 
+Therefore, instead of opening the bags and feeding their contents through the conveyor into the incinerator,   
+the incinerator lid was opened and the bags were fed directly into the incinerator through the top. 
+Shortly thereafter, several explosions occurred.   
+After shutting down the incinerator and allowing it to cool, the ash was sorted.  
+Twelve butane gas canisters had burst from the explosions. The incinerator walls were also damaged.  
+
+In such cases, the incinerator required major repairs.  
+First, all the refractory material on the inner walls had to be removed and re-coated.  
+
+
