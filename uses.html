@@ -186,22 +186,20 @@
     </p>
 
     <h2>Available locations</h2>
+    <ul>
     <li>Islands and remote areas
     <a href="#" class="img-link" data-img="/images/island.png"> → View concept Image</a>
      </li>  
       <li>Military facilities</li>
       <li>Remote hospitals</li>
       <li>
-  <a href="https://ssimsangmin49-creator.github.io/ecofriendly-polymer-compounds-incineration/marine-waste-collection-vessel-small/">Marine waste collection vessel-small size</a>
-  </a>      
+  <a href="https://ssimsangmin49-creator.github.io/ecofriendly-polymer-compounds-incineration/marine-waste-collection-vessel-small/">Marine waste collection vessel-small size</a>   
     </li>      
      <li>
-  <a href="https://ssimsangmin49-creator.github.io/ecofriendly-polymer-compounds-incineration/marine-waste-collection-vessel-large/">Marine waste collection vessel-large size</a>
-  </a>      
+  <a href="https://ssimsangmin49-creator.github.io/ecofriendly-polymer-compounds-incineration/marine-waste-collection-vessel-large/">Marine waste collection vessel-large size</a>      
     </li>
       <li>
-  <a href="https://ssimsangmin49-creator.github.io/ecofriendly-polymer-compounds-incineration/waste-to-energy/">WTE(Waste-to energy)</a>
-  </a>       
+  <a href="https://ssimsangmin49-creator.github.io/ecofriendly-polymer-compounds-incineration/waste-to-energy/">WTE(Waste-to energy)</a>       
       
 </li>
       <li>Remote areas where waste transport is not easy</li>
@@ -235,26 +233,29 @@
       e.preventDefault();
       const imgSrc = link.dataset.img;
       lightboxImg.src = imgSrc;
-      lightbox.classList.add("active");
+
+      // ✅ CSS와 클래스명 맞춤
+      lightbox.classList.add("is-open");
       lightbox.setAttribute("aria-hidden", "false");
     });
   });
 
-  // 닫기 버튼 & 배경 클릭
   lightbox.addEventListener("click", e => {
     if (
       e.target.classList.contains("lightbox__backdrop") ||
       e.target.classList.contains("lightbox__close")
     ) {
-      lightbox.classList.remove("active");
+      lightbox.classList.remove("is-open");
       lightbox.setAttribute("aria-hidden", "true");
       lightboxImg.src = "";
     }
   });
 </script>
+
     
 </body>
 </html>
+
 
 
 
