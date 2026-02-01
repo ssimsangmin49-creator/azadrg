@@ -186,17 +186,12 @@
     </p>
 
     <h2>Available locations</h2>
-
-    <ul>
-      <li>Islands and remote areas <a href="#" class="img-link" data-img="images/island.png"> → View concept Image</a></li>
-      <!-- ✅ 팝업(라이트박스) -->
-<div id="lightbox" class="lightbox" aria-hidden="true">
-  <div class="lightbox__backdrop"></div>
-
-  <div class="lightbox__content" role="dialog" aria-modal="true">
-    <button class="lightbox__close" aria-label="Close">×</button>
-    <img id="lightboxImg" src="" alt="Preview" />
-  </div>
+    <li>
+    Islands and remote areas
+    <a href="#" class="img-link" data-img="images/island.png">
+      → View concept Image
+    </a>
+  </li>
        
       <li>Military facilities</li>
       <li>Remote hospitals</li>
@@ -216,7 +211,16 @@
       <li>Remote areas where waste transport is not easy</li>
       <li>Separate incineration of combustible waste (in countries where permitted)</li>
     </ul>
-     
+    
+   <!-- ✅ 팝업(라이트박스)는 ul 바깥에 -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <div class="lightbox__backdrop"></div>
+
+  <div class="lightbox__content" role="dialog" aria-modal="true">
+    <button class="lightbox__close" aria-label="Close">×</button>
+    <img id="lightboxImg" src="" alt="Preview" />
+  </div>
+</div>  
      
     <p>
       <a href="index.html">← Back to Home</a>
@@ -228,6 +232,7 @@
     
 </body>
 </html>
+
 
 
 
