@@ -229,9 +229,37 @@
   <footer class="page-footer">
   <div>© AZADrg · Application page</div>
 </footer>
+
+<script>
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightboxImg");
+
+  document.querySelectorAll(".img-link").forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      const imgSrc = link.dataset.img;
+      lightboxImg.src = imgSrc;
+      lightbox.classList.add("active");
+      lightbox.setAttribute("aria-hidden", "false");
+    });
+  });
+
+  // 닫기 버튼 & 배경 클릭
+  lightbox.addEventListener("click", e => {
+    if (
+      e.target.classList.contains("lightbox__backdrop") ||
+      e.target.classList.contains("lightbox__close")
+    ) {
+      lightbox.classList.remove("active");
+      lightbox.setAttribute("aria-hidden", "true");
+      lightboxImg.src = "";
+    }
+  });
+</script>
     
 </body>
 </html>
+
 
 
 
