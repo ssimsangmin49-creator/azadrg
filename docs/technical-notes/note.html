@@ -254,7 +254,39 @@
       color:#f9fafb;
       background: rgba(255,255,255,0.03);
     }
+/* Field test inside: fix code/pre/table colors for light background */
+.content .field-test code{
+  background: rgba(15,23,42,0.08);
+  border: 1px solid rgba(15,23,42,0.18);
+  color: #0f172a;
+}
 
+.content .field-test pre{
+  background: rgba(15,23,42,0.06);
+  border: 1px solid rgba(15,23,42,0.18);
+}
+
+.content .field-test pre code{
+  color: #0f172a;
+}
+
+/* optional: lists */
+.content .field-test ul,
+.content .field-test ol{
+  color:#1e293b;
+}
+
+/* optional: table */
+.content .field-test table{ color:#0f172a; }
+.content .field-test th,.content .field-test td{
+  border: 1px solid rgba(15,23,42,0.18);
+}
+.content .field-test th{
+  background: rgba(15,23,42,0.06);
+  color:#020617;
+}
+
+    
     .foot{
       margin-top:18px;
       color:var(--muted);
