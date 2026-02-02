@@ -396,6 +396,29 @@
       // Render
       setHTML("content", renderMarkdown(text));
 
+      // Render
+setHTML("content", renderMarkdown(text));
+
+/* =========================
+   Field test box auto-wrap
+   ========================= */
+const content = document.querySelector("#content");
+if (content) {
+  const h1 = content.querySelector("h1");
+  if (h1) {
+    const box = document.createElement("div");
+    box.className = "field-test";
+
+    // h1부터 끝까지 전부 box로 이동
+    while (h1.nextSibling) {
+      box.appendChild(h1.nextSibling);
+    }
+    box.prepend(h1);
+    content.appendChild(box);
+  }
+}
+
+
       // Updated stamp (element might be removed; safe)
       const lm = res.headers.get("last-modified");
       if (lm) {
