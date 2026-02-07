@@ -29,6 +29,9 @@
   bottom: -10px;
   width: 22px;
   height: 22px;
-  background: url("images/leaf-icon.png") no-repeat center;
+
+  background: url("/images/leaf-icon.png") no-repeat center;
   background-size: contain;
+}
+
 }
