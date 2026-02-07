@@ -94,6 +94,20 @@
       font-size: 0.85rem;
       color: #94a3b8;
     }
+    
+    /* Definition line: slightly stronger than body, less blue than links */
+.term-definition{
+  margin-top: 10px;
+  margin-bottom: 18px;
+  font-size: 0.98rem;       /* body보다 아주 살짝 강조 */
+  font-weight: 600;         /* 본문보다 조금 더 짙게 */
+  line-height: 1.55;
+  color: #a5b4fc;           /* body(#c7d2fe)보다 진하고, link(accent)보다 덜 파란 톤 */
+}
+.term-definition strong{
+  font-weight: 700;
+}
+
 
     footer{
   text-align: center;
@@ -144,6 +158,12 @@
       The process is designed for non-commercial research purposes and
       regions where patent restrictions do not apply.
     </p>
+
+    <p class="term-definition">
+      Throughout this document, the term <strong>Synthetic Polymer Compound Waste (SPCW)</strong> is used as
+      a general term for synthetic polymer-based wastes treated using controlled thermal processing.
+    </p>
+
 
     <h2>Background</h2>
 
@@ -291,6 +311,7 @@
   
 </body>
 </html>
+
 
 
 
