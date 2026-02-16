@@ -1,8 +1,8 @@
 # Field test results-03: Chamber making!
 
 Refractory cement is a hydraulic, heat-resistant building material made primarily of alumina and limestone 
-that can withstand high temperatures (1,000°C to 1,800°C or higher). 
-It is used for the installation and maintenance of high-temperature furnace linings in furnaces, kilns, stoves, and chimneys.
+that can withstand high temperatures (1,000°C to 1,800°C or higher). It is used for the installation and maintenance of 
+high-temperature furnace linings in furnaces, kilns, stoves, and chimneys.
 
 It is available in two forms: refractory mortar (refractory cement) for bonding refractory bricks and castable for direct pouring.
 
