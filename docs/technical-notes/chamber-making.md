@@ -1,10 +1,13 @@
 # Field test results-03: Chamber making!
 
-Most polymer waste is not separated and disposed of properly. It's often mixed with other types of waste  
-or indiscriminately placed in plastic bags and disposed of.   
+Refractory cement is a hydraulic, heat-resistant building material made primarily of alumina and limestone 
+that can withstand high temperatures (1,000°C to 1,800°C or higher). 
+It is used for the installation and maintenance of high-temperature furnace linings in furnaces, kilns, stoves, and chimneys.
 
-There's one thing to keep in mind when building and operating the incinerator introduced here.  
-Of course, this incident actually happened, and the lesson learned has been recorded and shared with others.
+It is available in two forms: refractory mortar (refractory cement) for bonding refractory bricks and castable for direct pouring.
+
+This section introduces a chamber made of castable for direct pouring.
+
 
 ## Inserting butane or isobutane cans into the incinerator
 
