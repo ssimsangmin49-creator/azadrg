@@ -5,16 +5,9 @@ that can withstand high temperatures (1,000°C to 1,800°C or higher). It is use
 high-temperature furnace linings in furnaces, kilns, stoves, and chimneys.
 
 It is available in two forms: refractory mortar (refractory cement) for bonding refractory bricks and castable for direct pouring.
-
 This section introduces a chamber made of castable for direct pouring.
 
+## Eagle claws
 
-## Inserting butane or isobutane cans into the incinerator
-
-While we are advised to puncture and dispose of most butane gas or isobutane cans,  
-which we discard after using them outdoors or for one-time use, most are simply discarded.  
-
-
-## Eagle talons
-While we are advised to puncture and dispose of most butane gas or isobutane cans,  
-which we discard after using them outdoors or for one-time use, most are simply discarded.  
+The circular chamber made of direct pour castable material must first be welded with what we commonly call 'eagle claws' 
+inside the metal cylinder that forms the chamber exterior.
