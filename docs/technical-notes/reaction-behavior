@@ -1,9 +1,9 @@
-TECH NOTES — Working Definitions
+# TECH NOTES — Working Definitions
 
-Reaction Behavior & Flame Regime in SPCW Thermal Processing
+### Reaction Behavior & Flame Regime in SPCW Thermal Processing
 
 
-1. Scope of This Note
+## 1. Scope of This Note
 
 This technical note introduces two working concepts used throughout the AZADrg project:
 
@@ -14,7 +14,8 @@ Flame regime
 These terms are not presented as formal combustion classifications.
 They are practical descriptors intended to explain observed thermal processes that do not align cleanly with conventional incineration terminology.
 
-2. Reaction Behavior
+
+## 2. Reaction Behavior
 
 Reaction behavior refers to how a material responds under sustained high-temperature exposure, rather than what the material is called or categorized as.
 
@@ -33,7 +34,7 @@ The term Synthetic Polymer Compound Waste (SPCW) is therefore used as a reaction
 This distinction is important because different polymer-dominant materials may exhibit similar oxidation dynamics despite differing compositions.
 
 
-3. Flame Regime (Provisional Field Concept)
+## 3. Flame Regime (Provisional Field Concept)
 
 Flame regime is used here as a descriptive term for the overall combustion environment created by reaction behavior under controlled thermal conditions.
 
@@ -55,7 +56,7 @@ Instead, it uses “flame regime” to describe an operational observation: the 
 Formal flame characterization remains outside the current scope and may evolve through future field observation and collaboration with combustion researchers.
 
 
-4. Relationship Between Reaction Behavior and Flame Regime
+## 4. Relationship Between Reaction Behavior and Flame Regime
 
 Within this framework:
 
@@ -65,7 +66,7 @@ Flame regime → influences → emission characteristics and thermal stability
 The emphasis is therefore placed on understanding thermal response patterns rather than waste identity alone.
 
 
-5. Why These Terms Are Used
+## 5. Why These Terms Are Used
 
 Conventional incineration language often assumes:
 
@@ -86,7 +87,7 @@ reaction-behavior-driven processing
 The use of “reaction behavior” and “flame regime” allows these observations to be described without overstating formal scientific claims.
 
 
-6. Working Status
+## 6. Working Status
 
 These definitions are living descriptors, not final scientific terminology.
 
