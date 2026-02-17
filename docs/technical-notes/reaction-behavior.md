@@ -6,8 +6,8 @@
 ## 1. Scope of This Note
 
 This technical note introduces two working concepts used throughout the AZADrg project:
-- <strong>Reaction behavior</strong>
-- <strong>Flame regime</strong>
+- **Reaction behavior**
+- **Flame regime**
 
 These terms are not presented as formal combustion classifications.
 They are practical descriptors intended to explain observed thermal processes that do not align cleanly with conventional incineration terminology.
