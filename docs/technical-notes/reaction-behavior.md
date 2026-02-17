@@ -1,4 +1,4 @@
-# TECH NOTES — Working Definitions
+# Tech Notes(01) — Working Definitions
 
 ### Reaction Behavior & Flame Regime in SPCW Thermal Processing
 
@@ -6,10 +6,8 @@
 ## 1. Scope of This Note
 
 This technical note introduces two working concepts used throughout the AZADrg project:
-
-Reaction behavior
-
-Flame regime
+- <strong>Reaction behavior</strong>
+- <strong>Flame regime</strong>
 
 These terms are not presented as formal combustion classifications.
 They are practical descriptors intended to explain observed thermal processes that do not align cleanly with conventional incineration terminology.
@@ -17,36 +15,28 @@ They are practical descriptors intended to explain observed thermal processes th
 
 ## 2. Reaction Behavior
 
-Reaction behavior refers to how a material responds under sustained high-temperature exposure, rather than what the material is called or categorized as.
+<strong>Reaction behavior</strong> refers to how a material responds under sustained high-temperature exposure, rather than what the material is called or categorized as.
 
 In this context, materials are not grouped primarily by chemical name or waste classification, but by shared thermal response characteristics such as:
+- gas-phase generation tendency
+- oxidation pathway dominance
+- soot formation behavior
+- transition from solid phase to reactive vapor environment
 
-gas-phase generation tendency
-
-oxidation pathway dominance
-
-soot formation behavior
-
-transition from solid phase to reactive vapor environment
-
-The term Synthetic Polymer Compound Waste (SPCW) is therefore used as a reaction-behavior grouping, not a regulatory waste category.
+The term <strong>Synthetic Polymer Compound Waste (SPCW)</strong> is therefore used as a reaction-behavior grouping, not a regulatory waste category.
 
 This distinction is important because different polymer-dominant materials may exhibit similar oxidation dynamics despite differing compositions.
 
 
 ## 3. Flame Regime (Provisional Field Concept)
 
-Flame regime is used here as a descriptive term for the overall combustion environment created by reaction behavior under controlled thermal conditions.
+<strong>Flame regime</strong> is used here as a descriptive term for the overall combustion environment created by reaction behavior under controlled thermal conditions.
 
 Observed characteristics may include:
-
-low-luminosity or blue-dominant flames
-
-reduced visible soot radiation
-
-gas-phase oxidation prevailing over surface burning
-
-refractory environments exceeding typical solid-burn expectations
+- low-luminosity or blue-dominant flames
+- reduced visible soot radiation
+- gas-phase oxidation prevailing over surface burning
+- refractory environments exceeding typical solid-burn expectations
 
 The term is intentionally provisional.
 
@@ -69,32 +59,23 @@ The emphasis is therefore placed on understanding thermal response patterns rath
 ## 5. Why These Terms Are Used
 
 Conventional incineration language often assumes:
-
-dominant solid-phase burning
-
-visible radiant flames
-
-waste classification as the primary design basis
+- dominant solid-phase burning
+- visible radiant flames
+- waste classification as the primary design basis
 
 However, field observations within the AZADrg system suggest a different emphasis:
-
-gas-phase oxidation environments
-
-low-luminosity flame conditions
-
-reaction-behavior-driven processing
+- gas-phase oxidation environments
+- low-luminosity flame conditions
+- reaction-behavior-driven processing
 
 The use of “reaction behavior” and “flame regime” allows these observations to be described without overstating formal scientific claims.
 
 
 ## 6. Working Status
 
-These definitions are living descriptors, not final scientific terminology.
+These definitions are <strong>living descriptors</strong>, not final scientific terminology.
 
 They are intended to:
-
-support clear communication
-
-reduce rhetorical ambiguity
-
-invite future theoretical refinement by combustion and reaction researchers.
+- support clear communication
+- reduce rhetorical ambiguity
+- invite future theoretical refinement by combustion and reaction researchers.
