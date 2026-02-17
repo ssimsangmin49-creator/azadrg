@@ -15,7 +15,7 @@ They are practical descriptors intended to explain observed thermal processes th
 
 ## 2. Reaction Behavior
 
-<strong>Reaction behavior</strong> refers to how a material responds under sustained high-temperature exposure, rather than what the material is called or categorized as.
+**Reaction behavior** refers to how a material responds under sustained high-temperature exposure, rather than what the material is called or categorized as.
 
 In this context, materials are not grouped primarily by chemical name or waste classification, but by shared thermal response characteristics such as:
 - gas-phase generation tendency
@@ -23,14 +23,14 @@ In this context, materials are not grouped primarily by chemical name or waste c
 - soot formation behavior
 - transition from solid phase to reactive vapor environment
 
-The term <strong>Synthetic Polymer Compound Waste (SPCW)</strong> is therefore used as a reaction-behavior grouping, not a regulatory waste category.
+The term **Synthetic Polymer Compound Waste (SPCW)** is therefore used as a reaction-behavior grouping, not a regulatory waste category.
 
 This distinction is important because different polymer-dominant materials may exhibit similar oxidation dynamics despite differing compositions.
 
 
 ## 3. Flame Regime (Provisional Field Concept)
 
-<strong>Flame regime</strong> is used here as a descriptive term for the overall combustion environment created by reaction behavior under controlled thermal conditions.
+**Flame regime** is used here as a descriptive term for the overall combustion environment created by reaction behavior under controlled thermal conditions.
 
 Observed characteristics may include:
 - low-luminosity or blue-dominant flames
@@ -73,7 +73,7 @@ The use of “reaction behavior” and “flame regime” allows these observati
 
 ## 6. Working Status
 
-These definitions are <strong>living descriptors</strong>, not final scientific terminology.
+These definitions are **living descriptors**, not final scientific terminology.
 
 They are intended to:
 - support clear communication
