@@ -1,19 +1,20 @@
 # Tech Notes(02) — Chamber Scaling Ruleset (Draft v0.1)
 
+<span style="color:#1e40af; font-weight:bold;">
 “This ruleset was developed to standardize the format. The coefficient (k) should ideally be determined based on actual operating data.”
+</span>
 
-A. Geometry & Reference Ratios
+## A. Geometry & Reference Ratios
 
-Define chamber inner diameter D and hot-zone length L (refractory hot zone).
+1. Define chamber inner diameter D and hot-zone length L (refractory hot zone).
+2. Maintain hot-zone slenderness within: L/D = 3.0–4.5 for stable staged gas-phase oxidation.
 
-Maintain hot-zone slenderness within: L/D = 3.0–4.5 for stable staged gas-phase oxidation.
+## B. Central Rod (Mixing Spine)
 
-B. Central Rod (Mixing Spine)
-
-Set central rod diameter as a fixed fraction of D:
+3. Set central rod diameter as a fixed fraction of D:
 d_rod = k_r · D, where k_r = 0.06–0.12 (select one k_r and keep constant across sizes).
 
-Keep rod tip / leading edge located inside the primary reaction zone:
+4. Keep rod tip / leading edge located inside the primary reaction zone:
 x_tip ≈ 0.15–0.25 · L from the feed-side reference plane (constant fraction).
 
 C. Air Nozzle Staging (Temporal Split of Oxidation)
