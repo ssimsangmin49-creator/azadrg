@@ -45,9 +45,18 @@ Instead, it uses “flame regime” to describe an operational observation: the 
 
 Formal flame characterization remains outside the current scope and may evolve through future field observation and collaboration with combustion researchers.
 
-![Field observation of flame evolution](images/flame4.png)
-*Figure. Observed flame appearance under sustained SPCW thermal processing*
-
+<figure style="text-align:center;">
+  <img src="{{ '/images/flame4.png' | relative_url }}"
+       alt="Introducing the central rod"
+        style="max-width:700px; width:100%;">
+  <figcaption style="
+    margin-top:0.75rem;
+    font-size:0.9rem;
+    color:#9ca3af;
+    ">
+  Figure 1. The central rod configuration diagram
+  </figcaption>
+</figure>
 
 
 ## 4. Relationship Between Reaction Behavior and Flame Regime
