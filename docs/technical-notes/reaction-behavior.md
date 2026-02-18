@@ -45,13 +45,10 @@ Instead, it uses “flame regime” to describe an operational observation: the 
 
 Formal flame characterization remains outside the current scope and may evolve through future field observation and collaboration with combustion researchers.
 
-<p style="text-align:center; margin:2.5rem auto;">
-  <img src="/images/flame4.png" style="max-width:700px;width:100%;">
-  <br>
-  <span style="font-size:0.9rem;color:#9ca3af;">
-    Figure. Observed flame appearance under sustained SPCW thermal processing
-  </span>
-</p>
+![Field observation of flame evolution](/images/flame4.png)
+
+*Figure. Observed flame appearance under sustained SPCW thermal processing*
+
 
 
 ## 4. Relationship Between Reaction Behavior and Flame Regime
