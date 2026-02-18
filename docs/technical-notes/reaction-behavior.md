@@ -48,7 +48,7 @@ Formal flame characterization remains outside the current scope and may evolve t
 <figure style="text-align:center;">
   <img src="../images/flame4.png"
        alt="Field observation of flame evolution"
-       style="width:100%; max-width:700px;">
+       style="width:100%; max-width:700px;"/>
   <figcaption style="margin-top:0.75rem; font-size:0.9rem; color:#9ca3af;">
     Figure. Observed flame appearance under sustained SPCW thermal processing
   </figcaption>
