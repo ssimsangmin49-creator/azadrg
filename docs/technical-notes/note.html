@@ -383,7 +383,7 @@
       return `@@CODEBLOCK_${idx}@@`;
     });
 
-    let html = escapeHtml(md);
+    let html = md;
 
     // Headings
     html = html.replace(/^###\s(.+)$/gm, "<h3>$1</h3>");
