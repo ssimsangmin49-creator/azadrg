@@ -12,55 +12,48 @@
 ## B. Central Rod (Mixing Spine)
 
 3. Set central rod diameter as a fixed fraction of D:
- &nbsp;&nbsp;d_rod = k_r · D, where k_r = 0.06–0.12 (select one k_r and keep constant across sizes).
+ &nbsp;&nbsp;&nbsp;d_rod = k_r · D, where k_r = 0.06–0.12 (select one k_r and keep constant across sizes).
 
 4. Keep rod tip / leading edge located inside the primary reaction zone:
-   x_tip ≈ 0.15–0.25 · L from the feed-side reference plane (constant fraction).
+ &nbsp;&nbsp;&nbsp;x_tip ≈ 0.15–0.25 · L from the feed-side reference plane (constant fraction).
 
 ## C. Air Nozzle Staging (Temporal Split of Oxidation)
 
 5. Select number of air stages **N_stage** by L/D:
+- L/D < 3.0 → N_stage = 2–3
+- 3.0 ≤ L/D ≤ 4.0 → N_stage = 3–4
+- L/D > 4.0 → N_stage = 4–6
 
-L/D < 3.0 → N_stage = 2–3
+6. Place stages at normalized axial positions (from feed-side):
+&nbsp;&nbsp;&nbsp;**x_i / L = {0.15, 0.35, 0.55, 0.75, 0.90}** (use first N_stage points).
 
-3.0 ≤ L/D ≤ 4.0 → N_stage = 3–4
+## D. Nozzle Count & Symmetry (Flow Architecture)
 
-L/D > 4.0 → N_stage = 4–6
+7. Use symmetric nozzle counts per stage to form stable swirl / cross-mixing:
+&nbsp;&nbsp;&nbsp;**n_i ∈ {6, 8, 12}** (avoid odd counts unless field-proven).
 
-Place stages at normalized axial positions (from feed-side):
-x_i / L = {0.15, 0.35, 0.55, 0.75, 0.90} (use first N_stage points).
+8. Start rule:
 
-D. Nozzle Count & Symmetry (Flow Architecture)
+- Primary stage: n₁ = 6–8 (anchor + ignition)
+- Middle stages: n_mid = 6–8 (mixing + cracking)
+- Final stage: n_last = 6–12 (polishing oxidation)
 
-Use symmetric nozzle counts per stage to form stable swirl / cross-mixing:
-n_i ∈ {6, 8, 12} (avoid odd counts unless field-proven).
+## E. Air Pressure Control (Velocity-Based Standard)
 
-Start rule:
+9. Standardize by nozzle exit velocity, not gauge pressure:
+&nbsp;&nbsp;&nbsp;Target **V_exit** bands (choose one per stage and keep constant across scale):
 
-Primary stage: n₁ = 6–8 (anchor + ignition)
+- Primary: **V₁ = 25–45 m/s**
+- Middle: **V_mid = 20–40 m/s**
+- Final: **V_last = 15–35 m/s**
 
-Middle stages: n_mid = 6–8 (mixing + cracking)
+10. Convert V_exit to operating pressure using nozzle area & supply line losses:
+&nbsp;&nbsp;&nbsp;**P_set(stage) = f(V_exit, A_nozzle_total, ΔP_line, temperature)**
+&nbsp;&nbsp;&nbsp;→ Document P_set as a table per chamber size after commissioning.
 
-Final stage: n_last = 6–12 (polishing oxidation)
+## F. Commissioning Acceptance Criteria (Smoke-Free Stability)
 
-E. Air Pressure Control (Velocity-Based Standard)
+11. Acceptance is defined by: stable low-luminosity flame + no visible smoke + no persistent odor under worst-case SPCW feed.
 
-Standardize by nozzle exit velocity, not gauge pressure:
-Target V_exit bands (choose one per stage and keep constant across scale):
-
-Primary: V₁ = 25–45 m/s
-
-Middle: V_mid = 20–40 m/s
-
-Final: V_last = 15–35 m/s
-
-Convert V_exit to operating pressure using nozzle area & supply line losses:
-P_set(stage) = f(V_exit, A_nozzle_total, ΔP_line, temperature)
-→ Document P_set as a table per chamber size after commissioning.
-
-F. Commissioning Acceptance Criteria (Smoke-Free Stability)
-
-Acceptance is defined by: stable low-luminosity flame + no visible smoke + no persistent odor under worst-case SPCW feed.
-
-If instability appears: adjust in this order only:
-(i) stage airflow split → (ii) V_exit (pressure) → (iii) nozzle count/layout → (iv) k_r (rod ratio)
+12. If instability appears: adjust in this order only:
+&nbsp;&nbsp;&nbsp;**(i) stage airflow split → (ii) V_exit (pressure) → (iii) nozzle count/layout → (iv) k_r (rod ratio)**
