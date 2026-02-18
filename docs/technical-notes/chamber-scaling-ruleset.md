@@ -12,7 +12,7 @@
 ## B. Central Rod (Mixing Spine)
 
 3. Set central rod diameter as a fixed fraction of D:
- &nbsp;d_rod = k_r · D, where k_r = 0.06–0.12 (select one k_r and keep constant across sizes).
+ &nbsp;&nbsp;d_rod = k_r · D, where k_r = 0.06–0.12 (select one k_r and keep constant across sizes).
 
 4. Keep rod tip / leading edge located inside the primary reaction zone:
    x_tip ≈ 0.15–0.25 · L from the feed-side reference plane (constant fraction).
