@@ -1,9 +1,3 @@
----
-layout: default
-title: Tech Notes(01) — Working Definitions
-permalink: /docs/technical-notes/reaction-behavior/
----
-
 # Tech Notes(01) — Working Definitions
 
 ### Reaction Behavior & Flame Regime in SPCW Thermal Processing
