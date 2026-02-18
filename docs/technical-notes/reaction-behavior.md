@@ -46,15 +46,15 @@ Instead, it uses “flame regime” to describe an operational observation: the 
 Formal flame characterization remains outside the current scope and may evolve through future field observation and collaboration with combustion researchers.
 
 <figure style="text-align:center; margin:2.5rem auto;">
-  <img src="{{ '/assets/images/heat.png' | relative_url }}"
-       alt="Heat utilization concept diagram"
+  <img src="{{ '/images/flame4.png' | relative_url }}"
+       alt="Field observation of flame evolution"
        style="max-width:700px; width:100%;">
   <figcaption style="
     margin-top:0.75rem;
     font-size:0.9rem;
     color:#9ca3af;
   ">
-    Figure 1. Conceptual diagram of simultaneous oxidation and thermal treatment by air curtain
+    Figure. Observed flame appearance under sustained SPCW thermal processing
   </figcaption>
 </figure>
 
