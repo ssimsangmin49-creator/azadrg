@@ -46,7 +46,7 @@ Instead, it uses “flame regime” to describe an operational observation: the 
 Formal flame characterization remains outside the current scope and may evolve through future field observation and collaboration with combustion researchers.
 
 <figure style="text-align:center; margin:2.5rem auto;">
-  <img src="{{ '/images/flame4.png' | relative_url }}"
+  <img src="{{ '/main/images/flame4.png' | relative_url }}"
        alt="Field observation of flame evolution"
        style="max-width:700px; width:100%;">
   <figcaption style="
