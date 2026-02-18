@@ -12,3 +12,11 @@ This section introduces a chamber made of castable for direct pouring.
 The circular chamber made of direct pour castable material must first be welded with what we commonly call 'eagle claws' 
 inside the metal cylinder that forms the chamber exterior.These eagle claws firmly hold the castable material to the circular chamber,
 allowing the chamber to withstand high temperature environments.
+
+<figure style="text-align:center; margin:0;">
+  <img src="../images/claws.png">
+       <alt="image of claws">
+       <style="width:100%; max-width:700px; display:block;">
+  <figcaption style="margin-top:0.4rem; font-size:0.9rem; color:#9ca3af;">Figure. Image of claws welded inside the chamber
+  </figcaption>
+</figure>
