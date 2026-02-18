@@ -16,7 +16,7 @@ allowing the chamber to withstand high temperature environments.
 <figure style="text-align:center; margin:0;">
   <img src="../images/claws.png">
        <alt="image of claws">
-       <style="width:80%; max-width:500px; display:block;">
+       <style="width:50%; max-width:400px; display:block;">
   <figcaption style="margin-top:0.4rem; font-size:0.9rem; color:#9ca3af;">Figure. Image of claws welded inside the chamber
   </figcaption>
 </figure>
