@@ -1,4 +1,4 @@
-# Chamber Scaling Ruleset (Draft v0.1)
+# Tech Notes(02) — Chamber Scaling Ruleset (Draft v0.1)
 
 “This ruleset was developed to standardize the format. The coefficient (k) should ideally be determined based on actual operating data.”
 
