@@ -35,3 +35,14 @@
 }
 
 }
+
+.tech-figure{
+  text-align:center;
+  margin:2.5rem auto;
+}
+.tech-figure figcaption{
+  margin-top:0.75rem;
+  font-size:0.9rem;
+  color:#9ca3af;
+}
+
