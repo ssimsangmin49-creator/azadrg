@@ -6,20 +6,20 @@
 
 ## A. Geometry & Reference Ratios
 
-1. Define chamber inner diameter D and hot-zone length L (refractory hot zone).
-2. Maintain hot-zone slenderness within: L/D = 3.0–4.5 for stable staged gas-phase oxidation.
+1. Define chamber inner diameter **D** and hot-zone length L (refractory hot zone).
+2. Maintain **hot-zone slenderness** within: **L/D = 3.0–4.5** for stable staged gas-phase oxidation.
 
 ## B. Central Rod (Mixing Spine)
 
 3. Set central rod diameter as a fixed fraction of D:
-d_rod = k_r · D, where k_r = 0.06–0.12 (select one k_r and keep constant across sizes).
+   d_rod = k_r · D, where k_r = 0.06–0.12 (select one k_r and keep constant across sizes).
 
 4. Keep rod tip / leading edge located inside the primary reaction zone:
-x_tip ≈ 0.15–0.25 · L from the feed-side reference plane (constant fraction).
+   x_tip ≈ 0.15–0.25 · L from the feed-side reference plane (constant fraction).
 
-C. Air Nozzle Staging (Temporal Split of Oxidation)
+## C. Air Nozzle Staging (Temporal Split of Oxidation)
 
-Select number of air stages N_stage by L/D:
+5. Select number of air stages **N_stage** by L/D:
 
 L/D < 3.0 → N_stage = 2–3
 
