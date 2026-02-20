@@ -1,59 +1,141 @@
-# Tech Notes(02) — Chamber Scaling Ruleset (Draft v0.1)
+# Tech Notes(02) — Chamber Scaling Ruleset: Standard Declaration (v0.1)
 
-<span style="color:#1e40af; font-weight:bold;">
-“This ruleset was developed to standardize the format. The coefficient (k) should ideally be determined based on actual operating data.”
-</span>
+## SPCW Thermal Treatment: Concept & Reactor Behavior Framework
 
-## A. Geometry & Reference Ratios
+This page declares the conceptual foundation of SPCW thermal treatment
+based on reactor behavior rather than fixed engineering dimensions.
 
-1. Define chamber inner diameter **D** and hot-zone length L (refractory hot zone).
-2. Maintain **hot-zone slenderness** within: **L/D = 3.0–4.5** for stable staged gas-phase oxidation.
+It is not a construction manual.
 
-## B. Central Rod (Mixing Spine)
+Specific sizes, values, and operating parameters are intentionally left
+to field development, as SPCW characteristics vary widely across locations
+and feed conditions.
 
-3. Set central rod diameter as a fixed fraction of D:
- &nbsp;&nbsp;&nbsp;d_rod = k_r · D, where k_r = 0.06–0.12 (select one k_r and keep constant across sizes).
 
-4. Keep rod tip / leading edge located inside the primary reaction zone:
- &nbsp;&nbsp;&nbsp;x_tip ≈ 0.15–0.25 · L from the feed-side reference plane (constant fraction).
+---
 
-## C. Air Nozzle Staging (Temporal Split of Oxidation)
+## 1. Design Philosophy
 
-5. Select number of air stages **N_stage** by L/D:
-- L/D < 3.0 → N_stage = 2–3
-- 3.0 ≤ L/D ≤ 4.0 → N_stage = 3–4
-- L/D > 4.0 → N_stage = 4–6
+The system is designed as a vertical thermal reaction space where:
 
-6. Place stages at normalized axial positions (from feed-side):
-&nbsp;&nbsp;&nbsp;**x_i / L = {0.15, 0.35, 0.55, 0.75, 0.90}** (use first N_stage points).
+- material enters from the top
+- feedstock naturally falls toward the lower zone
+- high-temperature decomposition occurs near the bottom
+- generated gases rise upward and undergo staged oxidation
 
-## D. Nozzle Count & Symmetry (Flow Architecture)
+Geometry is defined by proportional behavior rather than absolute measurements.
 
-7. Use symmetric nozzle counts per stage to form stable swirl / cross-mixing:
-&nbsp;&nbsp;&nbsp;**n_i ∈ {6, 8, 12}** (avoid odd counts unless field-proven).
 
-8. Start rule:
+---
 
-- Primary stage: n₁ = 6–8 (anchor + ignition)
-- Middle stages: n_mid = 6–8 (mixing + cracking)
-- Final stage: n_last = 6–12 (polishing oxidation)
+## 2. Reactor Behavior Standard
 
-## E. Air Pressure Control (Velocity-Based Standard)
+Instead of fixed dimensions, the following behavior zones define the reactor:
 
-9. Standardize by nozzle exit velocity, not gauge pressure:
-&nbsp;&nbsp;&nbsp;Target **V_exit** bands (choose one per stage and keep constant across scale):
+### Lower Zone — Reaction Origin
+- Primary location of thermal decomposition
+- Accumulation and transformation of SPCW
+- Central rod anchored from the lower structure moderates gas release
 
-- Primary: **V₁ = 25–45 m/s**
-- Middle: **V_mid = 20–40 m/s**
-- Final: **V_last = 15–35 m/s**
+### Middle Zone — Mixing Transition
+- Rising gases interact with staged air injection
+- Flow stabilization and reaction continuity
 
-10. Convert V_exit to operating pressure using nozzle area & supply line losses:
-&nbsp;&nbsp;&nbsp;**P_set(stage) = f(V_exit, A_nozzle_total, ΔP_line, temperature)**
-&nbsp;&nbsp;&nbsp;→ Document P_set as a table per chamber size after commissioning.
+### Upper Zone — Gas-Phase Oxidation
+- Completion of oxidation process
+- Thermal energy exits the chamber naturally or is recovered downstream
 
-## F. Commissioning Acceptance Criteria (Smoke-Free Stability)
 
-11. Acceptance is defined by: stable low-luminosity flame + no visible smoke + no persistent odor under worst-case SPCW feed.
+This zonal behavior remains consistent regardless of reactor size.
 
-12. If instability appears: adjust in this order only:
-&nbsp;&nbsp;&nbsp;**(i) stage airflow split → (ii) V_exit (pressure) → (iii) nozzle count/layout → (iv) k_r (rod ratio)**
+
+---
+
+## 3. Scaling Principle
+
+Scaling is declared through proportional relationships only.
+
+Examples include:
+
+- chamber height relative to diameter
+- staged air positioning along reactor height
+- rod proportions aligned with reaction behavior
+
+Absolute values are not standardized here.
+Field validation determines final configurations.
+
+
+---
+
+## 4. Central Rod — Functional Declaration
+
+The central rod is defined as a reaction moderator rather than a structural centerpiece.
+
+Its configuration may vary depending on SPCW characteristics, including:
+
+- inland synthetic polymer wastes
+- marine-derived mixed debris
+- moisture and density variations
+
+Rod proportions and sectional design are expected to evolve through field data.
+
+
+---
+
+## 5. Optional Reaction Modules
+
+The reactor architecture may include optional elements depending on site requirements:
+
+- extended chamber height for higher SPCW throughput
+- staged rod sections in the lower region
+- optional agitation mechanisms to stabilize solid-phase behavior
+
+These elements are not fixed standards but adaptive modules.
+
+
+---
+
+## 6. WTE Compatibility (Concept Level)
+
+The reactor may operate purely as a reaction-oriented system or
+be configured for waste-to-energy (WTE) applications.
+
+When WTE is applied:
+
+- heat extraction occurs downstream
+- external steam generation or heat exchange may be used
+- modular parallel reactors may share a common thermal header
+
+Purpose-specific configurations are discussed separately.
+
+
+---
+
+## 7. Field-Centered Development
+
+This declaration establishes only the behavioral framework.
+
+Detailed parameters are expected to emerge from:
+
+- size-specific field operation
+- SPCW-type variation
+- iterative airflow and internal configuration adjustments
+
+No single configuration is considered universal.
+
+
+---
+
+## 8. Design Intent
+
+This system is not defined by conventional incinerator terminology.
+
+It represents a reactor-based approach to SPCW thermal treatment,
+where stability arises from flow behavior, staged oxidation,
+and adaptive field development.
+
+The goal is a framework that can be applied anywhere —
+from remote regions to dense urban environments —
+without dependence on fixed mechanical formulas.W feed.
+
+
