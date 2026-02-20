@@ -1,4 +1,4 @@
-# Tech Notes(02) — Chamber Scaling Ruleset: Standard Declaration (v0.1)
+# Tech Notes(00) — Chamber Scaling Ruleset: Standard Declaration (v0.1)
 
 ## SPCW Thermal Treatment: Concept & Reactor Behavior Framework
 
