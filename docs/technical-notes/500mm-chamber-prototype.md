@@ -80,7 +80,7 @@ Future updates may include:
   <figure style="text-align:center; margin:0;">
   <img src="../images/500mm.png">
        <alt="image of 500mm">
-       <style="width:20%; max-width:600px;">
+       <style="width:20%; max-width:500px;">
   <figcaption style="margin-top:0.4rem; font-size:0.9rem; color:#9ca3af;">Figure. Image of 500mm Chamber Prototype — Baseline Configuration
   </figcaption>
 </figure>
