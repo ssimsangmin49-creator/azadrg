@@ -130,13 +130,16 @@
   color: rgba(255, 255, 255, 0.9);
 }
 .hero {
-  min-height: auto;
-  padding: 60px 20px:
+  height: 80vh;   /* 딱 화면 일부만 사용 */
   background-image:
-    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
     url("../../images/image-top.png");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
