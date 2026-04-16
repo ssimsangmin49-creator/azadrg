@@ -130,7 +130,8 @@
   color: rgba(255, 255, 255, 0.9);
 }
 .hero {
-  min-height: 100vh;
+  min-height: auto;
+  padding: 60px 20px:
   background-image:
     linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
     url("../../images/image-top.png");
