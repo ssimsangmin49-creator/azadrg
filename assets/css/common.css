@@ -131,19 +131,11 @@
 }
 .hero {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-                   background-image: url("../../images/image-top.png");
+  background-image:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("../../images/image-top.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: white;
-}
-
-
-.data-note-item.empty {
-  border-style: dashed;
-  opacity: 0.95;
 }
