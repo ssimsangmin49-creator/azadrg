@@ -131,6 +131,7 @@
 }
 .hero {
   position: relative;
+  z-index: 20; 
   min-height: 72vh;
   background: linear-gradient(180deg, #08152f 0%, #0a1836 100%);
   display: flex;
