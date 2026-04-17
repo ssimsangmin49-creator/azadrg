@@ -254,3 +254,50 @@ footer ul,
 .blog-post-list a:hover {
   background: rgba(255, 255, 255, 0.08);
 }
+.blog-block {
+  max-width: 900px;
+  margin: 40px auto 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.blog-link {
+  display: inline-block;
+  margin-bottom: 14px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.blog-block h3 {
+  margin: 0 0 8px;
+}
+
+.latest-subtitle {
+  margin: 0 0 18px;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+#posts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+#posts-list li {
+  margin-bottom: 12px;
+}
+
+#posts-list li a {
+  display: block;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  text-decoration: none;
+  color: #ffffff;
+  transition: background 0.2s ease;
+}
+
+#posts-list li a:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
