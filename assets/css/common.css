@@ -143,3 +143,9 @@
   align-items: center;
   justify-content: center;
 }
+.main-image {
+  display: block;
+  margin: 30px auto;
+  max-width: 400px;
+  width: 80%;
+}
