@@ -253,3 +253,18 @@ footer ul,
 #posts-list li a:hover {
   color: #ffffff;
 }
+
+.container {
+  margin-left: 60px;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card,
+.field-box,
+.github-box {
+  flex: 1;
+}
