@@ -268,16 +268,3 @@ footer ul,
 .github-box {
   flex: 1;
 }
-.contribute {
-  padding: 28px 30px;
-  min-height: 240px;
-  border-radius: 18px;
-}
-
-.contrib-actions li {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding-left: 8px;
-  margin-bottom: 10px;
-}
