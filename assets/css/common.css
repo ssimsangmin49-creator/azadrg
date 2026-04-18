@@ -268,3 +268,18 @@ footer ul,
 .github-box {
   flex: 1;
 }
+.contribute .contrib-actions {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0 0;
+}
+
+.contribute .contrib-actions li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(17,24,39,0.55);
+}
