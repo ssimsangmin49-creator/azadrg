@@ -283,7 +283,8 @@ footer ul,
 
 /* 링크 = 카드 */
 .contrib-actions a {
-  display: block;
+  adding-left: 50px;}
+   display: block;
 
   /* 🔥 박스 크기 조정 */
   padding: 14px 18px;
