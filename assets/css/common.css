@@ -311,3 +311,36 @@ footer ul,
   margin-left: auto;
   margin-right: auto;
 }
+
+/* =========================
+   CONTRIBUTE UPGRADE
+   ========================= */
+
+.contrib-actions {
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.contrib-actions li {
+  list-style: none;
+  margin-bottom: 14px;
+}
+
+.contrib-actions a {
+  display: block;
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #c7d2fe;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+.contrib-actions a:hover {
+  background: rgba(34, 197, 94, 0.12);
+  border-color: rgba(34, 197, 94, 0.4);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
