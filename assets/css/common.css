@@ -253,3 +253,15 @@ footer ul,
 #posts-list li a:hover {
   color: #ffffff;
 }
+
+.blog-block {
+  margin-top: 32px;
+
+  /* 🔥 카드화 */
+  background: rgba(8, 18, 45, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 24px 22px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+}
