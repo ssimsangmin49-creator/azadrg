@@ -345,13 +345,21 @@ footer ul,
   transform: translateY(-2px);
 }
 /* =========================
-   FORCE CONTRIBUTE OUTSIDE LOOK
+   FORCE CONTRIBUTE OUTSIDE
    ========================= */
 
 .contribute {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  
   margin-top: 80px !important;
+
   max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  clear: both;
+  width: 100%;
+}
+
+/* 혹시 부모가 flex/grid면 영향 끊기 */
+.contribute {
+  display: block !important;
 }
