@@ -235,3 +235,55 @@
     border-radius: 18px;
   }
 }
+/* =========================
+   AFC HERO FIX
+   ========================= */
+
+.afc-hero {
+  max-width: 860px;
+  margin: 0 auto 28px;
+  padding: 36px 0 24px;
+  text-align: center;
+}
+
+.afc-hero h1 {
+  margin: 0 0 10px;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #ffffff !important;
+}
+
+.afc-hero h2 {
+  margin: 0 0 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.82) !important;
+}
+
+.afc-hero-desc {
+  margin: 0 auto;
+  max-width: 800px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.86) !important;
+}
+
+/* =========================
+   SECTION TITLE COLOR FIX
+   ========================= */
+
+.card-section h2,
+.card-section .section-title {
+  color: #ffffff !important;
+}
+
+.section-title::after {
+  background: linear-gradient(
+    to right,
+    #22c55e 0%,
+    #22c55e 90%,
+    transparent 100%
+  ) !important;
+}
