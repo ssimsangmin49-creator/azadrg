@@ -298,3 +298,16 @@ footer ul,
   border-color: rgba(34, 197, 94, 0.4);
   color: #ffffff;
 }
+/* =========================
+   LEFT SHIFT (AFC 공간 확보)
+   ========================= */
+
+.box-section,
+.blog-block,
+.contribute,
+.contact-block {
+  max-width: 900px;
+  
+  margin-left: 120px;   /* 🔥 왼쪽 고정 */
+  margin-right: auto;   /* 오른쪽 공간 열기 */
+}
