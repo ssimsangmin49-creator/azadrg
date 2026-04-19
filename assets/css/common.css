@@ -266,30 +266,27 @@ footer ul,
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
 }
 /* =========================
-   CONTRIBUTE TUNING
+   CONTRIBUTE TUNING (FIXED)
    ========================= */
 
-/* 전체 리스트 */
 .contrib-actions {
   padding: 40px;
   margin: 20px 0 0;
 }
 
-/* 각 항목 */
 .contrib-actions li {
   list-style: none;
   margin-bottom: 12px;
+  position: relative;
 }
 
-/* 링크 = 카드 */
 .contrib-actions a {
-  adding-left: 50px;}
-   display: block;
+  display: block;
 
-  /* 🔥 박스 크기 조정 */
-  padding: 14px 18px;
+  /* 🔥 글자 오른쪽 밀기 */
+  padding: 14px 18px 14px 60px;
+
   border-radius: 16px;
-
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.08);
 
@@ -297,31 +294,22 @@ footer ul,
   text-decoration: none;
   font-size: 15px;
 
-  /* 🔥 아이콘 공간 확보 */
-  padding-left: 58px;
-
-  position: relative;
-}
-
-/* 🔥 아이콘 정렬 */
-.contrib-actions li {
   position: relative;
 }
 
 .contrib-actions li::before {
   position: absolute;
-  left: 50px;
+  left: 20px;   /* 아이콘 위치 */
   top: 50%;
   transform: translateY(-50%);
   font-size: 14px;
 }
-/* 아이콘 매핑 */
+
 .contrib-actions li:nth-child(1)::before { content: "🐞"; }
 .contrib-actions li:nth-child(2)::before { content: "💡"; }
 .contrib-actions li:nth-child(3)::before { content: "📝"; }
 .contrib-actions li:nth-child(4)::before { content: "🔧"; }
 
-/* hover 효과 */
 .contrib-actions a:hover {
   background: rgba(34, 197, 94, 0.12);
   border-color: rgba(34, 197, 94, 0.4);
