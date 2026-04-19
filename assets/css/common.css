@@ -304,12 +304,12 @@ footer ul,
 .blog-block,
 .contribute,
 .contact-block {
-  margin-left: 50px !important;
+  margin-left: 20px !important;
   margin-right: 0 !important;
 }
 .title-list {
   position: relative;
-  left: 40px;
+  left: 10px;
 }
 
 /* =========================
