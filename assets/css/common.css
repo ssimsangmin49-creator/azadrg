@@ -306,7 +306,9 @@ footer ul,
 .blog-block,
 .contribute,
 .contact-block {
-  max-width: 900px;
+  margin-left: 120px;
+  margin-right: auto;
+}
   
   margin-left: 120px;   /* 🔥 왼쪽 고정 */
   margin-right: auto;   /* 오른쪽 공간 열기 */
