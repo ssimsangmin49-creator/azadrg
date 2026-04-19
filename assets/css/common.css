@@ -317,6 +317,8 @@ footer ul,
    ========================= */
 .main-wrap {
   position: relative;
+  max-width: 1200px;   /* 🔥 기존보다 크게 */
+  margin: 0 auto;
 }
 .afc-box {
   position: absolute;
