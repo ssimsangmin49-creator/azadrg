@@ -34,6 +34,8 @@
   background-size: contain;
 }
 
+}
+
 .tech-figure{
   text-align:center;
   margin:2.5rem auto;
@@ -250,10 +252,4 @@ footer ul,
 
 #posts-list li a:hover {
   color: #ffffff;
-}
-
-
-/* 혹시 부모가 flex/grid면 영향 끊기 */
-.contribute {
-  display: block !important;
 }
