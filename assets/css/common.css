@@ -309,7 +309,7 @@ footer ul,
 
 .contrib-actions li::before {
   position: absolute;
-  left: 10px;
+  left: 50px;
   top: 50%;
   transform: translateY(-50%);
   font-size: 14px;
