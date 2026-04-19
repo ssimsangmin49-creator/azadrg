@@ -15,14 +15,13 @@
 }
 
 .afc-eyebrow {
-  margin: 0 0 12px;
+  margin: 0 0 16px;
   color: #facc15;
-  font-size: 0.92rem;
+  font-size: 1.4rem;   /* 🔥 키움 */
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
-
 .afc-hero h1 {
   margin: 0 0 10px;
   font-size: 3rem;
