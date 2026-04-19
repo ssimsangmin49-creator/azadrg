@@ -287,3 +287,15 @@
     transparent 100%
   ) !important;
 }
+.site-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
