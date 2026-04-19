@@ -315,20 +315,19 @@ footer ul,
 /* =========================
    AFC-500 SIDE PANEL
    ========================= */
-
+.main-wrap {
+  position: relative;
+}
 .afc-box {
-  position: fixed;
-
-  right: 80px;   /* 오른쪽 위치 */
-  top: 260px;    /* 시작 위치 */
-
-  width: 260px;
+  position: absolute;
+  top: 280px;
+  right: 40px;
+  width: 250px;
 
   background: rgba(8, 18, 45, 0.95);
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 20px;
   padding: 20px;
-
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
