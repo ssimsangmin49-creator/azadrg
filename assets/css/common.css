@@ -320,17 +320,15 @@ footer ul,
 }
 .afc-box {
   position: absolute;
-  top: 280px;
+  top: 40px;
   right: 40px;
   width: 250px;
-
   background: rgba(8, 18, 45, 0.95);
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
-
 .afc-box h3 {
   margin-bottom: 14px;
   font-size: 18px;
