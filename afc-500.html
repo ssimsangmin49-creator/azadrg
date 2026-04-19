@@ -4,67 +4,93 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AFC-500 | AZADrg</title>
+  <link rel="stylesheet" href="common.css" />
   <link rel="stylesheet" href="afc-500.css" />
 </head>
 <body>
 
+  <!-- =========================
+       SITE HEADER
+       ========================= -->
   <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" class="brand">AZADrg</a>
-      <nav class="top-nav">
-        <a href="index.html">Home</a>
-        <a href="trial.html">Field Trial</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+    <div class="logo-box">
+      <a href="index.html" class="logo-link">
+        <img src="images/azadrg-icon.png" alt="AZADrg logo">
+        <span class="logo-text">AZADrg</span>
+      </a>
     </div>
   </header>
 
   <main class="afc-page">
 
-    <!-- HERO -->
+    <!-- =========================
+         HERO
+         ========================= -->
     <section class="afc-hero">
-      <p class="eyebrow">AFC-500</p>
-      <h1>AFC-500: Open Thermal Architecture for SPCW</h1>
-      <p class="hero-desc">
-        A field-built 500 mm chamber designed to demonstrate controlled gas-phase oxidation
-        of synthetic polymer compound waste (SPCW) through a simple but behavior-driven structure.
+      <p class="afc-eyebrow">AFC-500 Documentation</p>
+      <h1>AFC-500</h1>
+      <h2>Field-Built Thermal Architecture for SPCW</h2>
+      <p class="afc-hero-desc">
+        AFC-500 is a 500 mm field-built chamber developed to demonstrate controlled
+        gas-phase oxidation of synthetic polymer compound waste (SPCW) through a
+        simple but behavior-driven thermal structure.
       </p>
     </section>
 
-    <!-- OVERVIEW -->
-    <section class="content-section">
-      <h2>Overview</h2>
-      <p>
+    <!-- =========================
+         INTRO
+         ========================= -->
+    <section class="card-section">
+      <h2 class="section-title">Introduction</h2>
+      <p class="section-intro">
         AFC-500 is the demonstration platform of the Post-Incineration Framework.
-        It is intended to show how chamber geometry, air layering, and reaction behavior
-        can produce stable gas-phase oxidation in an open thermal treatment system.
+        It is not intended as a conventional incinerator model, but as an open
+        thermal architecture designed to show how chamber geometry, staged air
+        supply, and flame behavior can drive stable gas-phase oxidation under
+        field-based conditions.
       </p>
+      <div class="notes-meta">
+        <span class="note-tag">500 mm chamber</span>
+        <span class="note-tag">Open thermal treatment</span>
+        <span class="note-tag">Behavior-driven structure</span>
+        <span class="note-tag">SPCW-focused</span>
+      </div>
     </section>
 
-    <!-- FEATURE VIDEO -->
-    <section class="content-section">
-      <h2>Featured Video</h2>
-      <div class="video-card featured-video">
-        <div class="video-frame">
+    <!-- =========================
+         FEATURED VIDEO
+         ========================= -->
+    <section class="card-section">
+      <h2 class="section-title">Featured Video</h2>
+
+      <div class="featured-video-card">
+        <div class="video-frame large-video">
           <iframe
             src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
             title="AFC-500 Featured Video"
             allowfullscreen>
           </iframe>
         </div>
-        <div class="video-meta">
+
+        <div class="video-description">
           <h3>Overview of AFC-500</h3>
           <p>
-            A short introduction showing the chamber structure, flame regime,
-            and gas-phase oxidation behavior under field conditions.
+            A short introductory video showing the chamber structure, flame regime,
+            and field-based gas-phase oxidation behavior of AFC-500.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- ESSENTIAL VIDEOS -->
-    <section class="content-section">
-      <h2>Essential Videos</h2>
+    <!-- =========================
+         ESSENTIAL VIDEOS
+         ========================= -->
+    <section class="card-section">
+      <h2 class="section-title">Essential Videos</h2>
+      <p class="section-intro">
+        These videos are not only for presentation. They are intended to preserve
+        practical knowledge on fabrication, operation, and observed flame behavior.
+      </p>
 
       <div class="video-grid">
 
@@ -78,7 +104,7 @@
           </div>
           <div class="video-meta">
             <h3>Chamber Build</h3>
-            <p>Structure, refractory layout, dimensions, and field fabrication process.</p>
+            <p>Refractory structure, layout, dimensions, and fabrication process.</p>
           </div>
         </article>
 
@@ -92,7 +118,7 @@
           </div>
           <div class="video-meta">
             <h3>Rod Configuration</h3>
-            <p>Nozzle drilling, rod diameter, staging, and air delivery arrangement.</p>
+            <p>Nozzle structure, rod sizing, staging, and air supply arrangement.</p>
           </div>
         </article>
 
@@ -106,7 +132,7 @@
           </div>
           <div class="video-meta">
             <h3>Ignition & Stabilization</h3>
-            <p>How to initiate the flame regime and move toward stable gas-phase oxidation.</p>
+            <p>How the chamber is started and how stable gas-phase oxidation is formed.</p>
           </div>
         </article>
 
@@ -120,7 +146,7 @@
           </div>
           <div class="video-meta">
             <h3>Operation</h3>
-            <p>Feeding sequence, flame response, reaction behavior, and practical operation.</p>
+            <p>Feeding sequence, flame response, and practical field-based operation.</p>
           </div>
         </article>
 
@@ -134,7 +160,7 @@
           </div>
           <div class="video-meta">
             <h3>Results</h3>
-            <p>Observed flame regimes, qualitative outcomes, and field-based validation notes.</p>
+            <p>Observed flame regimes, qualitative outcomes, and field validation notes.</p>
           </div>
         </article>
 
@@ -148,31 +174,78 @@
           </div>
           <div class="video-meta">
             <h3>Improvements</h3>
-            <p>Ongoing design adjustments, lessons learned, and next development priorities.</p>
+            <p>Ongoing corrections, lessons learned, and next structural adjustments.</p>
           </div>
         </article>
 
       </div>
     </section>
 
-    <!-- DOCUMENT LINKS -->
-    <section class="content-section">
-      <h2>Documents & Notes</h2>
-      <div class="link-grid">
-        <a class="doc-link" href="#">📐 Drawings</a>
-        <a class="doc-link" href="#">📊 Results</a>
-        <a class="doc-link" href="#">🧪 Improvement Notes</a>
-        <a class="doc-link" href="#">📝 Operation Notes</a>
-        <a class="doc-link" href="#">🔧 Build Notes</a>
-        <a class="doc-link" href="#">📁 Data Notes</a>
+    <!-- =========================
+         DOCUMENTS
+         ========================= -->
+    <section class="card-section">
+      <h2 class="section-title">Drawings, Results & Notes</h2>
+
+      <div class="doc-grid">
+        <a class="doc-card" href="#">
+          <span class="doc-icon">📐</span>
+          <span>
+            <strong>Drawings</strong>
+            <small>Chamber dimensions, rod structure, and layout</small>
+          </span>
+        </a>
+
+        <a class="doc-card" href="#">
+          <span class="doc-icon">📊</span>
+          <span>
+            <strong>Results</strong>
+            <small>Observed behavior, operation notes, and validation records</small>
+          </span>
+        </a>
+
+        <a class="doc-card" href="#">
+          <span class="doc-icon">🧪</span>
+          <span>
+            <strong>Improvements</strong>
+            <small>Design revisions, corrections, and next priorities</small>
+          </span>
+        </a>
+
+        <a class="doc-card" href="#">
+          <span class="doc-icon">📝</span>
+          <span>
+            <strong>Operation Notes</strong>
+            <small>Field-based operating logic and practical observations</small>
+          </span>
+        </a>
+
+        <a class="doc-card" href="#">
+          <span class="doc-icon">🔧</span>
+          <span>
+            <strong>Build Notes</strong>
+            <small>Fabrication process, materials, and assembly comments</small>
+          </span>
+        </a>
+
+        <a class="doc-card" href="#">
+          <span class="doc-icon">📁</span>
+          <span>
+            <strong>Data Notes</strong>
+            <small>Structured records, measurements, and future open logs</small>
+          </span>
+        </a>
       </div>
     </section>
 
-  </main>
+    <!-- =========================
+         BACK LINK
+         ========================= -->
+    <section class="afc-bottom-link">
+      <a href="index.html">← Back to Main Page</a>
+    </section>
 
-  <footer class="site-footer">
-    <p>© AZADrg — AFC-500 Documentation</p>
-  </footer>
+  </main>
 
 </body>
 </html>
