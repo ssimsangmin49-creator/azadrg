@@ -232,3 +232,11 @@ a {
     font-size: 1.4rem;
   }
 }
+.afc-box h3 a {
+  color: #facc15;
+  text-decoration: none;
+}
+
+.afc-box h3 a:hover {
+  text-decoration: underline;
+}
