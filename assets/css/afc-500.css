@@ -178,12 +178,12 @@
    ========================= */
 
 .afc-bottom-link {
-  text-align: center;
+  text-align: left;
   margin-top: 34px;
 }
 
 .afc-bottom-link a {
-  color: #facc15;
+  color: #1264a3;
   text-decoration: none;
   font-weight: 600;
 }
