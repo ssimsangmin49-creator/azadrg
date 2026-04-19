@@ -314,6 +314,11 @@ footer ul,
   transform: translateY(-50%);
   font-size: 14px;
 }
+/* 아이콘 매핑 */
+.contrib-actions li:nth-child(1)::before { content: "🐞"; }
+.contrib-actions li:nth-child(2)::before { content: "💡"; }
+.contrib-actions li:nth-child(3)::before { content: "📝"; }
+.contrib-actions li:nth-child(4)::before { content: "🔧"; }
 
 /* hover 효과 */
 .contrib-actions a:hover {
