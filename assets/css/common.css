@@ -34,8 +34,6 @@
   background-size: contain;
 }
 
-}
-
 .tech-figure{
   text-align:center;
   margin:2.5rem auto;
@@ -299,17 +297,13 @@ footer ul,
   color: #ffffff;
 }
 /* =========================
-   LEFT SHIFT (AFC 공간 확보)
+   LEFT SHIFT (정상 버전)
    ========================= */
 
 .box-section,
 .blog-block,
 .contribute,
 .contact-block {
-  margin-left: 120px;
-  margin-right: auto;
-}
-  
-  margin-left: 120px;   /* 🔥 왼쪽 고정 */
-  margin-right: auto;   /* 오른쪽 공간 열기 */
+  margin-left: 120px !important;
+  margin-right: auto !important;
 }
