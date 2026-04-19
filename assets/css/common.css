@@ -307,3 +307,7 @@ footer ul,
   margin-left: 120px !important;
   margin-right: 0 !important;
 }
+.title-list {
+  margin-left: 120px;
+  margin-right: auto;
+}
