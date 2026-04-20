@@ -1,7 +1,9 @@
 /* =========================
    AFC-500 PAGE
    ========================= */
-
+body {
+  font-family: 'gorgia', times new roman, serif;
+}
 .afc-page {
   max-width: 1120px;
   margin: 0 auto;
