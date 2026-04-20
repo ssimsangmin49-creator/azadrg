@@ -5,6 +5,8 @@
  font-family: Georgia, "Times New Roman", serif;
 }
 
+ backround:##2e304d url(..images/afc-back.png) no repeat center/cover;
+
 .afc-page {
   max-width: 1120px;
   margin: 0 auto;
