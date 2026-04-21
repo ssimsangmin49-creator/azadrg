@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AFC-500 | AZADrg</title>
+  <meta name="description" content="AFC-500 field documentation: video, build notes, operation notes, and open data." />
+  <style>
+    :root {
+      --bg: #0f1114;
+      --panel: #171a1f;
+      --panel-2: #1d2128;
+      --line: #2d333d;
+      --text: #eef2f7;
+      --muted: #aeb8c5;
+      --accent: #f08a24;
+      --accent-2: #ffb15c;
+      --max: 1180px;
+      --radius: 18px;
+      --shadow: 0 18px 40px rgba(0,0,0,0.28);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #0b0d10 0%, #11151a 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    img { max-width: 100%; display: block; }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(10px);
+      background: rgba(10, 12, 15, 0.8);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 72px;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+
+    .brand-mark {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      box-shadow: 0 0 16px rgba(240, 138, 36, 0.65);
+    }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .site-nav a {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .site-nav a:hover,
+    .site-nav a:focus-visible {
+      color: var(--text);
+    }
+
+    .hero {
+      padding: 72px 0 40px;
+    }
+
+    .hero-wrap {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .hero-copy,
+    .hero-panel {
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-copy {
+      padding: 38px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(240, 138, 36, 0.12);
+      border: 1px solid rgba(240, 138, 36, 0.28);
+      color: var(--accent-2);
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-copy p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      max-width: 62ch;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: 0.2s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #111;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--text);
+      border-color: rgba(255,255,255,0.14);
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+
+    .hero-panel {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .stat {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .stat-label {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .stat strong {
+      font-size: 1.02rem;
+    }
+
+    .section {
+      padding: 22px 0 34px;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 20px;
+      margin-bottom: 18px;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 65ch;
+    }
+
+    .video-shell {
+      overflow: hidden;
+      border-radius: 22px;
+      background: var(--panel);
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: var(--shadow);
+    }
+
+    .video-frame {
+      aspect-ratio: 16 / 9;
+      width: 100%;
+      border: 0;
+      background: #000;
+    }
+
+    .video-caption {
+      padding: 18px 20px;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .grid-3,
+    .grid-4 {
+      display: grid;
+      gap: 18px;
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grid-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 1.1rem;
+    }
+
+    .card p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 0.97rem;
+    }
+
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      color: var(--accent-2);
+    }
+
+    .status-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .status-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .status-item span {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 0 10px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.05);
+    }
+
+    .badge-live {
+      color: #111;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      border-color: transparent;
+    }
+
+    .footer {
+      padding: 40px 0 60px;
+      color: var(--muted);
+    }
+
+    .footer-box {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 980px) {
+      .hero-wrap,
+      .grid-3,
+      .grid-4 {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-copy,
+      .hero-panel {
+        padding: 26px;
+      }
+
+      .hero-stats {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(var(--max), calc(100% - 20px));
+      }
+
+      .header-inner {
+        min-height: 64px;
+      }
+
+      .site-nav {
+        gap: 12px;
+      }
+
+      .hero {
+        padding-top: 38px;
+      }
+
+      .hero-copy,
+      .hero-panel,
+      .card {
+        padding: 18px;
+        border-radius: 16px;
+      }
+
+      .hero-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .section-head {
+        align-items: start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand" aria-label="Go to AZADrg home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>AZADrg</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Section navigation">
+        <a href="#video">Video</a>
+        <a href="#docs">Documentation</a>
+        <a href="#data">Data</a>
+        <a href="#evidence">Evidence</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-wrap">
+        <div class="hero-copy">
+          <span class="eyebrow">AFC-500 Documentation</span>
+          <h1>AFC-500</h1>
+          <p>
+            A field-first documentation page for the AFC-500 chamber: video, operating notes,
+            build notes, open data, and evolving evidence from manual, open-top, behavior-driven
+            thermal treatment of SPCW.
+          </p>
+          <p>
+            This page is the working entrance to the AFC-500 project. It is designed to connect
+            demonstration video with technical notes, daily records, and public evidence.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#video">Watch Main Video</a>
+            <a class="btn btn-secondary" href="#docs">Open Documentation</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="AFC-500 summary">
+          <div>
+            <span class="eyebrow">Current Focus</span>
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-label">Platform</span>
+                <strong>500 mm hand-made chamber</strong>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Mode</span>
+                <strong>Open treatment / manual operation</strong>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Core Theme</span>
+                <strong>Gas-phase oxidation</strong>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Purpose</span>
+                <strong>Field proof + open documentation</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="status-list">
+            <div class="status-item">
+              <span>Main documentation page</span>
+              <strong class="badge badge-live">Active</strong>
+            </div>
+            <div class="status-item">
+              <span>Build / operation notes</span>
+              <strong class="badge">Growing</strong>
+            </div>
+            <div class="status-item">
+              <span>Open log / field records</span>
+              <strong class="badge">Planned</strong>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="video" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Main Video</h2>
+            <p>
+              The AFC-500 page begins with moving evidence. This section is the primary viewing area
+              for introduction, field footage, and future episode-based documentation.
+            </p>
+          </div>
+        </div>
+
+        <div class="video-shell">
+          <!-- Replace the src below with your YouTube embed URL -->
+          <iframe
+            class="video-frame"
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+            title="AFC-500 main video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+          <div class="video-caption">
+            Replace <strong>YOUR_VIDEO_ID</strong> with your main AFC-500 video. Later, this section
+            can be expanded with a playlist, shorts, or related field clips.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="docs" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Documentation</h2>
+            <p>
+              Separate technical documents should live under the AFC-500 folder structure. This page
+              acts as the hub that sends people deeper into the project.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3>Build Notes</h3>
+            <p>
+              Chamber geometry, refractory work, rod configuration, nozzle layout, dimensions,
+              and fabrication decisions.
+            </p>
+            <a class="card-link" href="docs/build-notes.html">Open build notes →</a>
+          </article>
+
+          <article class="card">
+            <h3>Operation Notes</h3>
+            <p>
+              Ignition sequence, stabilization logic, feed timing, flame behavior, manual control,
+              and practical field observations.
+            </p>
+            <a class="card-link" href="docs/operation-notes.html">Open operation notes →</a>
+          </article>
+
+          <article class="card">
+            <h3>Data Notes</h3>
+            <p>
+              Structured trial summaries, test references, temperature records, emissions notes,
+              and open-log style reporting.
+            </p>
+            <a class="card-link" href="docs/data-notes.html">Open data notes →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="data" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Data & Logs</h2>
+            <p>
+              This section is ready to connect with exported Excel logs, markdown trial pages,
+              images, and downloadable records as your field data grows.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-4">
+          <article class="card">
+            <h3>Daily Logs</h3>
+            <p>Daily operating records, trial IDs, runtimes, and notable events.</p>
+            <a class="card-link" href="data/logs/">Open folder →</a>
+          </article>
+
+          <article class="card">
+            <h3>Excel Exports</h3>
+            <p>Structured exports from your VBA-based operation log system.</p>
+            <a class="card-link" href="data/excel/">Open folder →</a>
+          </article>
+
+          <article class="card">
+            <h3>Images</h3>
+            <p>Build photos, flame frames, chamber details, and stage-by-stage visuals.</p>
+            <a class="card-link" href="data/images/">Open folder →</a>
+          </article>
+
+          <article class="card">
+            <h3>Open Log</h3>
+            <p>Public-facing summaries generated from your field record structure.</p>
+            <a class="card-link" href="docs/open-log.html">Open open-log →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="evidence" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Evidence Trail</h2>
+            <p>
+              A compact area for linking out to external proof layers: YouTube, GitHub repository,
+              blog articles, and future public notes.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3>YouTube</h3>
+            <p>
+              Main video release, episode updates, shorts, and visual evidence from field work.
+            </p>
+            <a class="card-link" href="#">Add YouTube link →</a>
+          </article>
+
+          <article class="card">
+            <h3>GitHub</h3>
+            <p>
+              Repository access for site files, technical notes, and open documentation structure.
+            </p>
+            <a class="card-link" href="#">Add GitHub link →</a>
+          </article>
+
+          <article class="card">
+            <h3>Blog / Notes</h3>
+            <p>
+              Reflections, mechanism explanations, and deeper narrative around AFC-500 development.
+            </p>
+            <a class="card-link" href="#">Add blog link →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-box">
+      <div>
+        <strong>AFC-500 / AZADrg</strong><br />
+        <span>Field-first documentation for open thermal treatment architecture.</span>
+      </div>
+      <div>
+        <a href="../afc-500.html">Back to AFC-500 landing page</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
