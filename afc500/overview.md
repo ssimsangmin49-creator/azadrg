@@ -13,16 +13,15 @@ Chamber sizes that can be manufactured using the method proposed by AZADrg inclu
 
 Among these, we attempted to manufacture a 500mm size, which is a size that can be produced by hand.
 
-All unnecessary parts have been removed to make it as easy to see and understand as possible.
+####All unnecessary parts have been removed to make it as easy to see and understand as possible.
 ---
 
 ### Chamber Overview
 
 The chamber consists only of a connection device for injecting compressed air into the central pipe, 
-an auxiliary fuel inlet, and temperature measuring holes at the second and third stages.<br> 
+an auxiliary fuel inlet, and temperature measuring holes at the second and third stages.  
+
 Therefore, except for the compressed air injection method, everything is manual.
-
-
 
 ---
 
