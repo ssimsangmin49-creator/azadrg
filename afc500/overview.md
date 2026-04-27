@@ -9,8 +9,9 @@ permalink: /afc500/overview.md/
 ## 500mm inner diameter made of refractory brick
 
 Chamber sizes that can be manufactured using the method proposed by AZADrg include 300mm, 500mm, 1000mm, 1500mm, 
-2000mm, and 2500mm based on inner diameter.<br>
-Among these, we attempted to manufacture a 500mm size, which is a size that can be produced by hand.<br>
+2000mm, and 2500mm based on inner diameter.  
+
+Among these, we attempted to manufacture a 500mm size, which is a size that can be produced by hand.
 
 All unnecessary parts have been removed to make it as easy to see and understand as possible.
 ---
