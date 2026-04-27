@@ -26,7 +26,28 @@ Therefore, except for the compressed air injection method, everything is manual.
 ---
 
 ### Central Rod Overview
-Describe where this fits in the AFC-500 framework.
+
+The central air injection pipe was perforated to form a three-stage air curtain.  
+
+The size of the air injection holes was adjusted so that the injected air sufficiently reaches 
+the inner wall of the chamber.  
+The horsepower of the air compressor and the total number of air nozzles are important variables.
+
+---
+
+### Other chamber installation equipment
+
+It consists entirely of a manually injected auxiliary fuel injector and temperature measuring holes (located at the 2nd and 3rd stages).  
+
+#### Electricity is used only to drive the air compressor.
+
+---
+
+### Open-air construction and testing
+
+All production, testing, and operation were conducted in an outdoor environment.  
+
+The flame layer occasionally getting distorted in the video is due to the wind.
 
 ---
 
@@ -34,17 +55,6 @@ Describe where this fits in the AFC-500 framework.
 - Observation 1  
 - Observation 2  
 - Observation 3  
-
----
-
-### Data / Conditions
-| Item | Value |
-|------|------|
-| Date | YYYY-MM-DD |
-| Location | |
-| Feedstock | |
-| Operation Time | |
-| Notes | |
 
 ---
 
