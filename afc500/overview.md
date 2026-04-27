@@ -13,8 +13,7 @@ Chamber sizes that can be manufactured using the method proposed by AZADrg inclu
 
 Among these, we attempted to manufacture a 500mm size, which is a size that can be produced by hand.
 
-#### <span style="color:blue">All unnecessary parts have been removed to make it as easy to see and understand as possible.
-</span>
+#### <span style="color:blue">All unnecessary parts have been removed to make it as easy to see and understand as possible.</span>
 
 ---
 
