@@ -15,7 +15,7 @@ permalink: /afc500/ignition.md/
 - For initial ignition, it is best to use easily flammable waste, such as cardboard boxes, whenever possible.
 - Waste oil can also be used as auxiliary fuel.
 
-  ![Alt text](/images/ignition.png)
+  ![Alt Ignition](/images/ignition.png)
 
 ---
 
@@ -23,6 +23,8 @@ permalink: /afc500/ignition.md/
 
 - Once the second stage flame begins to form in the chamber after initial ignition, the stabilization phase has been entered.
 - The use of auxiliary fuel must be minimized, and the stabilization phase must be maintained by controlling the type and amount of input waste.
+
+   ![Alt Stabilization](/images/whitegas.png)
 
   ---
 
