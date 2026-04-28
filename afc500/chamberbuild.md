@@ -14,9 +14,10 @@ permalink: /afc500/chamberbuild.md/
 - Refractory bricks needed for each level: 34EA(Y2-22EA, Y3-12EA)
 - The height of the chamber: 1150mm(230*5) / Outer diameter of the chamber: 728mm
 
- ![Alt Refractory brick layout plan](images/brick-500mm.png)
+ ![Alt Refractory brick layout plan](images/brick-500mm.png
   
 ---
+
 
 ### Central Rod(Pipe)- Choose a type that is easily available nearby.
 
@@ -26,9 +27,15 @@ permalink: /afc500/chamberbuild.md/
 - Air nozzle hole size: 1.1mm
 - Position from the bottom of each layer: 400mm(1), 700mm(2), 930mm(3-1), 950mm(3-2)
 
-  ![AltCentral Ro Design](images/central-rod.png)
+  ![Alt Central Rod Design](images/central-rod.png)
 
 ---
+
+### Chamber lower support structure
+
+- It is recommended to use a thick steel plate for the lower support plate of the chamber whenever possible (use 6mm steel plate).
+
+ ![Alt Chamber lower support structure](images/lower-stru.png)
 
 ### Overview
 Short introduction or context.
