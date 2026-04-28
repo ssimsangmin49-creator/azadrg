@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Ignition & Stabilization"
-permalink: /afc500/Ignition.md/
+permalink: /afc500/ignition.md/
 ---
 
 # Ignition & Stabilization
