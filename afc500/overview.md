@@ -40,7 +40,7 @@ The horsepower of the air compressor and the total number of air nozzles are imp
 
 It consists entirely of a manually injected auxiliary fuel injector and temperature measuring holes (located at the 2nd and 3rd stages).  
 
-#### Electricity is used only to drive the air compressor.
+####<span style="color:blueviolet">Electricity is used only to drive the air compressor.</span>
 
 ---
 
@@ -48,7 +48,7 @@ It consists entirely of a manually injected auxiliary fuel injector and temperat
 
 All production, testing, and operation were conducted in an outdoor environment.  
 
-The flame layer occasionally getting distorted in the video is due to the wind.
+<span style="color:blueviolet">The flame layer occasionally getting distorted in the video is due to the wind.</span>
 
 ---
 
