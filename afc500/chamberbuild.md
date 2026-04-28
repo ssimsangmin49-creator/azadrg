@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Chamber Build"
-permalink: /afc500/chamberbuild/
+permalink: /afc500/chamberbuild.md/
 ---
 
 # Chamber Build
