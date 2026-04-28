@@ -40,7 +40,7 @@ The horsepower of the air compressor and the total number of air nozzles are imp
 
 It consists entirely of a manually injected auxiliary fuel injector and temperature measuring holes (located at the 2nd and 3rd stages).  
 
-####<span style="color:blueviolet">Electricity is used only to drive the air compressor.</span>
+#### <span style="color:blueviolet">Electricity is used only to drive the air compressor.</span>
 
 ---
 
@@ -53,8 +53,16 @@ All production, testing, and operation were conducted in an outdoor environment.
 ---
 
 ### Key Observations
-- Observation 1  
-- Observation 2  
+
+- Observation 1
+  
+The complete gas-phase oxidation of SPCW (Synthetic Polymer Compound Waste) depends on the structure and conditions of the processing equipment.
+
+  
+- Observation 2
+  
+It can be manufactured and used directly in everyday life through DIY. However, engineering skills are required for sizes with an inner chamber diameter exceeding 500mm.
+
 - Observation 3  
 
 ---
