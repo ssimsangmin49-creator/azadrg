@@ -13,11 +13,18 @@ permalink: /afc500/ignition.md/
 - You may use a gas torch or other long ignition aid. Be sure to operate the air compressor first.
 - The slight white smoke generated during initial ignition in the manual chamber disappears when auxiliary fuel is injected for preheating.
 - For initial ignition, it is best to use easily flammable waste, such as cardboard boxes, whenever possible.
+- Waste oil can also be used as auxiliary fuel.
 
   ![Alt text](/images/ignition.png)
 
-
 ---
+
+#### Stabilization
+
+- Once the second stage flame begins to form in the chamber after initial ignition, the stabilization phase has been entered.
+- The use of auxiliary fuel must be minimized, and the stabilization phase must be maintained by controlling the type and amount of input waste.
+
+  ---
 
 ### Overview
 To aid in understanding the principles and operation methods, the entire process from ignition to the use of auxiliary fuel 
