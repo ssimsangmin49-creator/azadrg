@@ -13,6 +13,8 @@ permalink: /afc500/chamberbuild.md/
 - Quantity of refractory bricks: Total 170EA(Y2-230*114*65/50mmc-> 110EA, Y3-230*114*65/32mm -> 60EA)
 - Refractory bricks needed for each level: 34EA(Y2-22EA, Y3-12EA)
 - The height of the chamber: 1150mm(230*5) / Outer diameter of the chamber: 728mm
+
+  ![Alt text](path/to/image.png)
   
 ---
 
