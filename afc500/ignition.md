@@ -23,6 +23,7 @@ permalink: /afc500/ignition.md/
 
 - Once the second stage flame begins to form in the chamber after initial ignition, the stabilization phase has been entered.
 - The use of auxiliary fuel must be minimized, and the stabilization phase must be maintained by controlling the type and amount of input waste.
+- When the flame inside the chamber goes out, white smoke is generated as seen in the image. If the flame is revived or re-ignited, the white smoke disappears immediately.
 
    ![Alt Stabilization](/images/whitegas.png)
 
@@ -33,15 +34,11 @@ To aid in understanding the principles and operation methods, the entire process
 was designed to be operated manually.  
 
 - Key point 1  Automation removes responsibility. Human Control Layer restores it.
-- Key point 2 
-- Key point 3  
+- Key point 2  Fine fuel injection during the initial ignition phase sustains the flame.
+- Key point 3  An auxiliary fuel injection system using compressed air is required.
 
 ---
 
-### System Context
-Describe where this fits in the AFC-500 framework.
-
----
 
 ### Key Observations
 - Observation 1  
