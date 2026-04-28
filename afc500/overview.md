@@ -69,7 +69,6 @@ All production, testing, and operation were conducted in an outdoor environment.
 ### Images
 ![AFC-500 Finished photo](../images/afc500-overview1.jpg)
 
-![Description](../images/your-image-02.jpg)
 
 ---
 
@@ -80,7 +79,9 @@ This AFC-500 chamber did not use vertical joints between refractory bricks durin
 ---
 
 ### Conclusion
-Short closing statement.
+
+Chamber as Condition, not Device.
+This chamber is better described as a reaction space rather than a disposal device.
 
 ---
 
