@@ -37,6 +37,8 @@ permalink: /afc500/chamberbuild.md/
 
  ![Alt Chamber lower support structure](images/lower-stru.png)
 
+---
+
 ### Overview
 Short introduction or context.
 
