@@ -22,7 +22,7 @@ Among these, we attempted to manufacture a 500mm size, which is a size that can 
 The chamber consists only of a connection device for injecting compressed air into the central pipe, 
 an auxiliary fuel inlet, and temperature measuring holes at the second and third stages.  
 
-<span style="color:blueviolet>Therefore, except for the compressed air injection method, everything is manual.</span>
+<span style="color:blueviolet">Therefore, except for the compressed air injection method, everything is manual.</span>
 
 ---
 
