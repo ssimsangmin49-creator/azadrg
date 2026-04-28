@@ -67,7 +67,7 @@ All production, testing, and operation were conducted in an outdoor environment.
 ---
 
 ### Images
-![AFC-500 Finished photo](../images/afc500-overview1.png)
+![AFC-500 Finished photo](../images/afc500-overview1.jpg)
 
 ![Description](../images/your-image-02.jpg)
 
