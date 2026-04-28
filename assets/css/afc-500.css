@@ -351,3 +351,9 @@
 .afc-hero-desc {
   color: rgba(255, 255, 255, 0.86) !important;
 }
+
+h1 .anchor,
+h2 .anchor,
+h3 .anchor {
+  display: none;
+}
