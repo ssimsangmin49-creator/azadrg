@@ -56,12 +56,12 @@ All production, testing, and operation were conducted in an outdoor environment.
 
 - Observation 1
   
-The complete gas-phase oxidation of SPCW (Synthetic Polymer Compound Waste) depends on the structure and conditions of the processing equipment.
+  * The complete gas-phase oxidation of SPCW (Synthetic Polymer Compound Waste) depends on the structure and conditions of the processing equipment.
 
   
 - Observation 2
   
-It can be manufactured and used directly in everyday life through DIY. However, engineering skills are required for sizes with an inner chamber diameter exceeding 500mm.
+* It can be manufactured and used directly in everyday life through DIY. However, engineering skills are required for sizes with an inner chamber diameter exceeding 500mm.
 
 - Observation 3  
 
