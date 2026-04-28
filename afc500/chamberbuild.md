@@ -14,7 +14,7 @@ permalink: /afc500/chamberbuild.md/
 - Refractory bricks needed for each level: 34EA(Y2-22EA, Y3-12EA)
 - The height of the chamber: 1150mm(230*5) / Outer diameter of the chamber: 728mm
 
- ![Alt Refractory brick layout plan](../images/brick-500mm.png)
+ ![Alt Refractory brick layout plan](images/brick-500mm.png)
   
 ---
 
