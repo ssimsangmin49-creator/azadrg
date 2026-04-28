@@ -362,7 +362,44 @@ footer ul,
   background: rgba(34,197,94,0.15);
   color: #fff;
 }
-.yt-icon {
-  width: 30px;
-  height: 30px;
+.afc-youtube-btn {
+  width: 100%;
+  min-height: 58px;
+  padding: 0 18px;
+  margin: 10px 0 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  box-sizing: border-box;
+  border-radius: 14px;
+  border: 1px solid rgba(190, 220, 255, 0.85);
+  background: rgba(255, 255, 255, 0.035);
+
+  color: #dce6ff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+
+  box-shadow: 0 0 12px rgba(90, 150, 255, 0.12);
+}
+
+.afc-youtube-btn:hover {
+  border-color: rgba(255, 230, 120, 0.95);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.afc-youtube-btn .yt-icon {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  display: block;
+}
+
+.afc-youtube-btn span {
+  display: inline-block;
+  white-space: nowrap;
 }
