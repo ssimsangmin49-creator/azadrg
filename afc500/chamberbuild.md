@@ -26,6 +26,8 @@ permalink: /afc500/chamberbuild.md/
 - Air nozzle hole size: 1.1mm
 - Position from the bottom of each layer: 400mm(1), 700mm(2), 930mm(3-1), 950mm(3-2)
 
+  ![AltCentral Ro Design](images/central-rod.png)
+
 ---
 
 ### Overview
