@@ -22,7 +22,7 @@ Among these, we attempted to manufacture a 500mm size, which is a size that can 
 The chamber consists only of a connection device for injecting compressed air into the central pipe, 
 an auxiliary fuel inlet, and temperature measuring holes at the second and third stages.  
 
-<span style="color:blueviolet">Therefore, except for the compressed air injection method, everything is manual.</span>
+<span style="color:red">Therefore, except for the compressed air injection method, everything is manual.</span>
 
 ---
 
@@ -63,7 +63,6 @@ All production, testing, and operation were conducted in an outdoor environment.
   
   * It can be manufactured and used directly in everyday life through DIY. However, engineering skills are required for sizes with an inner chamber diameter exceeding 500mm.
 
-- Observation 3  
 
 ---
 
@@ -75,7 +74,8 @@ All production, testing, and operation were conducted in an outdoor environment.
 ---
 
 ### Notes
-Additional remarks, anomalies, or field insights.
+
+This AFC-500 chamber did not use vertical joints between refractory bricks during manufacturing. In Korea, the use of individual incineration equipment that has not been authorized is strictly prohibited by law. In Korea, this equipment is recognized as an incinerator.
 
 ---
 
