@@ -18,9 +18,9 @@ permalink: /afc500/operation.md/
 ### Overview
 Short introduction or context.
 
-- Key point 1  
-- Key point 2  
-- Key point 3  
+- Key point 1  Focus on Stage 1 heating!
+- Key point 2  Check the Stage 2 heating status!
+- Key point 3  The chamber takes care of the rest!
 
 ---
 
@@ -36,19 +36,9 @@ Describe where this fits in the AFC-500 framework.
 
 ---
 
-### Data / Conditions
-| Item | Value |
-|------|------|
-| Date | YYYY-MM-DD |
-| Location | |
-| Feedstock | |
-| Operation Time | |
-| Notes | |
-
----
 
 ### Images
-![Description](../images/your-image-01.jpg)
+![Flame Stage](../images/stage-02.jpg)
 
 ![Description](../images/your-image-02.jpg)
 
