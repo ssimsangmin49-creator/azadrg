@@ -27,7 +27,7 @@
 }
 .afc-hero h1 {
   margin: 0 0 10px;
-  font-size: 3rem;
+  font-size: clamp(2.2rem, 5vw, 4rem);
   font-weight: 700;
   color: #e6f5f7;
   line-height: 1.1;
