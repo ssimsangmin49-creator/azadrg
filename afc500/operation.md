@@ -38,7 +38,7 @@ Describe where this fits in the AFC-500 framework.
 
 
 ### Images
-![Flame Stage](../images/stage-02.jpg)
+![Flame Stage](../images/flame/stage-02.jpg)
 
 ![Description](../images/your-image-02.jpg)
 
