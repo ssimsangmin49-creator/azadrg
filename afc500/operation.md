@@ -7,7 +7,12 @@ permalink: /afc500/operation.md/
 # Operation
 
 ## Reaction defines operation (Gas-phase oxidation)
-- 
+
+- For initial operation, preheating of the first stage is important. This is because once the second stage starts heating after the first stage has been preheated, the use of auxiliary fuel can be stopped.
+  
+- After ignition, focus on heating on level 1 with a low flame for about 15 to 20 minutes! Do not add a large amount of waste before level 2 is heated!
+  
+  
 ---
 
 ### Overview
@@ -55,7 +60,8 @@ Additional remarks, anomalies, or field insights.
 ---
 
 ### Conclusion
-Short closing statement.
+
+If the chamber is fully tuned, the chamber handles the rest automatically after the first stage of heating.
 
 ---
 
