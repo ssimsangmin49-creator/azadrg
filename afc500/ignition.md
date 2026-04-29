@@ -41,29 +41,12 @@ was designed to be operated manually.
 
 
 ### Key Observations
-- Observation 1  
-- Observation 2  
-- Observation 3  
+- Observation 1  The operation of the compressor required for chamber driving and the operation of the auxiliary fuel supply device can be made to operate mechanically very easily.
+- Observation 2  The pressure of the air compressor depends on the size of the chamber and the size and number of air nozzles in the central pipe.
+- Observation 3  When tuned along with the amount of auxiliary fuel supplied, the chamber performs its function perfectly.
 
 ---
 
-### Data / Conditions
-| Item | Value |
-|------|------|
-| Date | YYYY-MM-DD |
-| Location | |
-| Feedstock | |
-| Operation Time | |
-| Notes | |
-
----
-
-### Images
-![Description](../images/your-image-01.jpg)
-
-![Description](../images/your-image-02.jpg)
-
----
 
 ### Notes
 Additional remarks, anomalies, or field insights.
