@@ -402,3 +402,9 @@ footer ul,
   white-space: nowrap;
   line-height: 1;
 }
+
+@media (min-width: 900px) {
+  .main-content {
+    transform: translateX(-40px);
+  }
+}
