@@ -403,8 +403,8 @@ footer ul,
   line-height: 1;
 }
 
-@media (min-width: 900px) {
-  .main-content {
-    transform: translateX(20px);
-  }
+.container {
+  max-width: 1180px;
+  margin-left: 4%;
+  margin-right: auto;
 }
