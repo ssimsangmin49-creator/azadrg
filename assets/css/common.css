@@ -405,6 +405,6 @@ footer ul,
 
 @media (min-width: 900px) {
   .main-content {
-    transform: translateX(-40px);
+    transform: translateX(20px);
   }
 }
