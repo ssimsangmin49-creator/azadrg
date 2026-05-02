@@ -416,5 +416,5 @@ footer ul,
   border-top: 1px solid var(--muted);
   padding-top: 1.2rem;
 
-  transform: translateX(20px); /* 👉 숫자만 조절 */
+  transform: translateX(40px); /* 👉 숫자만 조절 */
 }
