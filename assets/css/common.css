@@ -408,3 +408,13 @@ footer ul,
   margin-left: 12%;
   margin-right: auto;
 }
+
+.contribute {
+  margin: 2.2rem auto;
+  max-width: 720px;
+  text-align: center;
+  border-top: 1px solid var(--muted);
+  padding-top: 1.2rem;
+
+  transform: translateX(20px); /* 👉 숫자만 조절 */
+}
