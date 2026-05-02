@@ -418,3 +418,28 @@ footer ul,
 
   transform: translateX(80px); /* 👉 숫자만 조절 */
 }
+
+.afc-500-panel {
+  position: relative;
+}
+
+/* X 버튼 */
+.afc-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 6px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* PC에서는 안보이게 */
+@media (min-width: 769px) {
+  .afc-close {
+    display: none;
+  }
+}
