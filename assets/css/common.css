@@ -419,11 +419,14 @@ footer ul,
   transform: translateX(20px); /* 👉 숫자만 조절 */
 }
 
+/* =========================
+   AFC-500 Close Button (Mobile)
+   ========================= */
+
 .afc-500-panel {
   position: relative;
 }
 
-/* X 버튼 */
 .afc-close {
   position: absolute;
   top: 10px;
@@ -437,7 +440,6 @@ footer ul,
   cursor: pointer;
 }
 
-/* PC에서는 안보이게 */
 @media (min-width: 769px) {
   .afc-close {
     display: none;
