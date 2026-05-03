@@ -29,7 +29,7 @@ permalink: /afc500/chamberbuild.md/
 
   ![Alt Central Rod Design](images/central-rod.png)
 
-<span style="color:#405dbd">- There is no fixed ratio for the chamber height and the central rod length. Please test the following:</span>
+<span style="color:#405dbd">**- There is no fixed ratio for the chamber height and the central rod length. Please test the following:**</span>
 
 1. For a chamber inner diameter of 500mm, a chamber height of approximately 1200mm to 1400mm is suitable.
 
