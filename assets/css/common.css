@@ -267,6 +267,19 @@ footer ul,
    CONTRIBUTE TUNING (FIXED)
    ========================= */
 
+@media (max-width: 768px) {
+  .contribute {
+    text-align: center;
+  }
+
+  .contrib-actions {
+    text-align: center;
+  }
+
+  .contrib-actions a {
+    text-align: center;
+  }
+}
 .contrib-actions {
   padding: 0;
   margin: 20px 0 0;
