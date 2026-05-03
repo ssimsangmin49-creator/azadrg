@@ -271,15 +271,14 @@ footer ul,
   .contribute {
     text-align: center;
   }
-
   .contrib-actions {
     text-align: center;
   }
-
   .contrib-actions a {
     text-align: center;
   }
 }
+
 .contrib-actions {
   padding: 0;
   margin: 20px 0 0;
