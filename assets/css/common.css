@@ -439,6 +439,10 @@ footer ul,
     width: 240px;
   }
 
+ .afc-box {
+    text-align: center;
+  }
+
   .afc-close {
     display: block;
     position: absolute;
