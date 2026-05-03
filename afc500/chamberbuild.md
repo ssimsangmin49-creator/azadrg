@@ -51,14 +51,16 @@ permalink: /afc500/chamberbuild.md/
 ### Overview
 Short introduction or context.
 
-- Key point 1  
-- Key point 2  
+- Key point 1  Horizontal alignment of the chamber and vertical alignment of the central rod
+- Key point 2  Maintaining the central rod precisely in the center of the chamber
 - Key point 3  
 
 ---
 
 ### System Context
+
 Describe where this fits in the AFC-500 framework.
+The stacking of the chambers and the configuration of the central rod are the most important. However, the work can be done relatively simply.
 
 ---
 
@@ -66,17 +68,6 @@ Describe where this fits in the AFC-500 framework.
 - Observation 1  
 - Observation 2  
 - Observation 3  
-
----
-
-### Data / Conditions
-| Item | Value |
-|------|------|
-| Date | YYYY-MM-DD |
-| Location | |
-| Feedstock | |
-| Operation Time | |
-| Notes | |
 
 ---
 
