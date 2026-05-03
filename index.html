@@ -697,35 +697,44 @@ by creating the conditions for controlled gas-phase oxidation of Synthetic Polym
 
     const html = items.filter(Boolean).join("");
     list.innerHTML = html || `<li>No valid posts.</li>`;
-  } catch (e) {
-    console.error(e);
-    list.innerHTML = `<li>Failed to load posts.</li>`;
-  }
-})();
-</script>
-
 <script>
-function closeAFC() {
-  document.getElementById('afcPanel').style.display = 'none';
-  document.getElementById('afcReopen').classList.add('show');
+  
+<script>
+document.addEventListener('DOMContentLoaded', function() {
 
-  localStorage.setItem('afcClosed', 'true');
-}
+  const panel = document.getElementById('afcPanel');
+  const reopenBtn = document.getElementById('afcReopen');
 
-function openAFC() {
-  document.getElementById('afcPanel').style.display = 'block';
-  document.getElementById('afcReopen').classList.remove('show');
+  function closeAFC() {
+    if (!panel || !reopenBtn) return;
 
-  localStorage.removeItem('afcClosed');
-}
+    panel.style.display = 'none';
+    reopenBtn.classList.add('show');
 
-window.onload = function() {
-  if (localStorage.getItem('afcClosed') === 'true') {
-    document.getElementById('afcPanel').style.display = 'none';
-    document.getElementById('afcReopen').classList.add('show');
+    localStorage.setItem('afcClosed', 'true');
   }
-}
+
+  function openAFC() {
+    if (!panel || !reopenBtn) return;
+
+    panel.style.display = 'block';
+    reopenBtn.classList.remove('show');
+
+    localStorage.removeItem('afcClosed');
+  }
+
+  // 전역에서 사용할 수 있게
+  window.closeAFC = closeAFC;
+  window.openAFC = openAFC;
+
+  // 초기 상태 복원
+  if (localStorage.getItem('afcClosed') === 'true') {
+    panel.style.display = 'none';
+    reopenBtn.classList.add('show');
+  }
+
+});
 </script>
-   
-</body>
-</html>
+
+ </body?
+ </html?
