@@ -313,27 +313,29 @@ footer ul,
 }
 
 /* =========================
-   AFC-500 SIDE PANEL
+   AFC-500 FLOAT PANEL
    ========================= */
-.main-wrap {
-  position: relative;
-  max-width: 1200px;   /* 🔥 기존보다 크게 */
-  margin: 0 auto;
-}
-.afc-box {
+
+.afc-500-panel {
   position: fixed;
   top: 180px;
   right: 90px;
   width: 250px;
+  z-index: 9999;
+}
 
+.afc-box {
+  width: 100%;
   background: rgba(8, 18, 45, 0.95);
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-sizing: border-box;
 }
+
 .afc-box h3 {
-  margin-bottom: 14px;
+  margin: 0 0 14px;
   font-size: 18px;
   color: #fde68a;
 }
@@ -362,23 +364,22 @@ footer ul,
   background: rgba(34,197,94,0.15);
   color: #fff;
 }
+
+/* YouTube button */
+
 .afc-youtube-btn {
   width: 100%;
   min-height: 46px;
   padding: 8px 14px;
   margin: 8px 0 12px;
-
   display: flex !important;
-  flex-direction: row !important;
   align-items: center !important;
   justify-content: center !important;
   gap: 8px;
-
   box-sizing: border-box;
   border-radius: 10px;
   border: 1px solid rgba(190, 220, 255, 0.45);
   background: rgba(255, 255, 255, 0.025);
-
   color: #dce6ff;
   text-decoration: none;
   font-size: 0.95rem;
@@ -403,73 +404,58 @@ footer ul,
   line-height: 1;
 }
 
-.container {
-  max-width: 1180px;
-  margin-left: 12%;
-  margin-right: auto;
-}
-
-.contribute {
-  margin: 2.2rem auto;
-  max-width: 720px;
-  text-align: center;
-  border-top: 1px solid var(--muted);
-  padding-top: 1.2rem;
-
-  transform: translateX(20px); /* 👉 숫자만 조절 */
-}
-
-/* =========================
-   AFC-500 Close Button (Mobile)
-   ========================= */
-
-.afc-500-panel {
-  position: relative;
-  z-index: 1000;
-}
+/* Close button */
 
 .afc-close {
-  display: block;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: rgba(0,0,0,0.6);
-  color: white;
-  border: none;
-  font-size: 18px;
-  padding: 6px 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 9999;
+  display: none;
 }
 
-@media (min-width: 769px) {
-  .afc-close {
-   display: none;
-  }
-}
+/* Reopen button */
 
 .afc-reopen {
   display: none;
   position: fixed;
   right: 16px;
   bottom: 18px;
-  z-index: 9999;
-
+  z-index: 10000;
   padding: 10px 14px;
   border-radius: 999px;
   border: 1px solid rgba(255, 230, 120, 0.75);
   background: rgba(8, 18, 45, 0.92);
   color: #fde68a;
-
   font-size: 13px;
   font-weight: 700;
   cursor: pointer;
   box-shadow: 0 8px 24px rgba(0,0,0,0.35);
 }
 
-/* 모바일에서만 다시열기 버튼 사용 */
+/* Mobile */
+
 @media (max-width: 768px) {
+  .afc-500-panel {
+    top: 110px;
+    right: 14px;
+    width: 240px;
+  }
+
+  .afc-close {
+    display: block;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    z-index: 10001;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    background: #111827;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  }
+
   .afc-reopen.show {
     display: block;
   }
