@@ -448,3 +448,29 @@ footer ul,
    display: none;
   }
 }
+
+.afc-reopen {
+  display: none;
+  position: fixed;
+  right: 16px;
+  bottom: 18px;
+  z-index: 9999;
+
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 230, 120, 0.75);
+  background: rgba(8, 18, 45, 0.92);
+  color: #fde68a;
+
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+/* 모바일에서만 다시열기 버튼 사용 */
+@media (max-width: 768px) {
+  .afc-reopen.show {
+    display: block;
+  }
+}
