@@ -698,9 +698,16 @@ by creating the conditions for controlled gas-phase oxidation of Synthetic Polym
 })();
 </script>
 
-  <script>
+ <script>
 function closeAFC() {
   document.getElementById('afcPanel').style.display = 'none';
+  localStorage.setItem('afcClosed', 'true');
+}
+
+window.onload = function() {
+  if (localStorage.getItem('afcClosed') === 'true') {
+    document.getElementById('afcPanel').style.display = 'none';
+  }
 }
 </script>
 
