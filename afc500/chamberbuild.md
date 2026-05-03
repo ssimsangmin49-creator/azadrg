@@ -72,9 +72,8 @@ The stacking of the chambers and the configuration of the central rod are the mo
 ---
 
 ### Images
-![Description](../images/your-image-01.jpg)
+![Description](../images/build/chamber-rod.jpg)
 
-![Description](../images/your-image-02.jpg)
 
 ---
 
