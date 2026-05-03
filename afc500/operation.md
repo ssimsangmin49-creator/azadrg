@@ -18,9 +18,9 @@ permalink: /afc500/operation.md/
 ### Overview
 Short introduction or context.
 
-- Key point 1  Focus on Stage 1 heating!
-- Key point 2  Check the Stage 2 heating status!
-- Key point 3  The chamber takes care of the rest!
+- Key point 1  <span style="color:#405dbd">**Focus on Stage 1 heating!**</span>
+- Key point 2  <span style="color:#405dbd">**Check the Stage 2 heating status!**</span>
+- Key point 3  <span style="color:#d63527">**The chamber takes care of the rest!**</span>
 
 ---
 
