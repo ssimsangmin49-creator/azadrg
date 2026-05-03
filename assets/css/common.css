@@ -12,12 +12,7 @@ main {
   margin: 0 auto;
   padding: 40px 20px;
 }
-
-@media (max-width: 600px) {
-  main {
-    padding: 20px 10px; /* 위아래 20px, 좌우 10px로 줄임 */
-  }
-   
+  
 .site-header {
   width: 100%;
   text-align: center;
