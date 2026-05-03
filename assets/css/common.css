@@ -268,14 +268,13 @@ footer ul,
    ========================= */
 
 @media (max-width: 768px) {
-  .contribute {
-    text-align: center;
-  }
-  .contrib-actions {
-    text-align: center;
-  }
   .contrib-actions a {
-    text-align: center;
+    padding-left: 0 !important;
+    text-align: center !important;
+  }
+
+  .contrib-actions li {
+    padding-left: 0 !important;
   }
 }
 
