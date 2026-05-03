@@ -651,82 +651,65 @@ by creating the conditions for controlled gas-phase oxidation of Synthetic Polym
     list.innerHTML = html || `<li>No valid posts.</li>`;
 <script>
 
-     <!-- =========================
-    AFC FLOAT PANNEL
+<!-- =========================
+     AFC-500 FLOAT PANEL
      ========================= -->
-  
-  <div class="afc-500-panel" id="afcPanel">
-  <button class="afc-close" onclick="closeAFC()">✕</button>
+
+<div class="afc-500-panel" id="afcPanel">
+  <button class="afc-close" onclick="closeAFC()" aria-label="Close AFC-500 panel">✕</button>
 
   <div class="afc-box">
 
-  <!-- 🔥 메인 진입 -->
-  <h3>
-    <a href="afc500/index.html">AFC-500</a>
-  </h3>
- 
+    <h3>
+      <a href="afc500/index.html">AFC-500</a>
+    </h3>
 
-  <!-- 🎬 영상 전용 -->
-  <h3>
-    <a href="afc-500.html" style="color:#fde68a;">
-      AFC-500 Field Video
-    </a>
-  </h3>
-   
-<div class="yt-channel-link">
-  <a class="afc-youtube-btn"
-   href="https://www.youtube.com/channel/UCFKdonzeImi53hfBmeq-SaQ"
-   target="_blank"
-   rel="noopener"
-   aria-label="Open AZADrg YouTube Channel">
-  <svg class="yt-icon" viewBox="0 0 24 24" aria-hidden="true">
-    <path fill="#ff0000"
-      d="M23.5 6.2s-.2-1.6-.8-2.3c-.8-.9-1.7-.9-2.1-1C17.6 2.7 12 2.7 12 2.7s-5.6 0-8.6.2c-.4.1-1.3.1-2.1 1C.7 4.6.5 6.2.5 6.2S.3 8 .3 9.8v1.4c0 1.8.2 3.6.2 3.6s.2 1.6.8 2.3c.8.9 1.9.9 2.4 1 1.7.2 7.3.2 7.3.2s5.6 0 8.6-.2c.4-.1 1.3-.1 2.1-1 .6-.7.8-2.3.8-2.3s.2-1.8.2-3.6V9.8c0-1.8-.2-3.6-.2-3.6zM9.8 14.6V7.8l6.4 3.4-6.4 3.4z"/>
-  </svg>
-  <span>YouTube Channel</span>
-</a>
-</div>
-   
-  <ul>
-    <li><a href="afc500/overview.md#overview">Overview</a></li>
-    <li><a href="afc500/chamberbuild.md">Chamber Build</a></li>
-    <li><a href="afc500/ignition.md">Ignition & Stabilization</a></li>
-    <li><a href="afc500/operation.md">Operation</a></li>
-    <li><a href="afc500/docs/data-notes.html">Results</a></li>
-    <li><a href="afc500/docs/data-notes.html#improvements">Improvements</a></li>
-  </ul>
+    <h3>
+      <a href="afc-500.html" style="color:#fde68a;">
+        AFC-500 Field Video
+      </a>
+    </h3>
 
- </div>
+    <div class="yt-channel-link">
+      <a class="afc-youtube-btn"
+         href="https://www.youtube.com/channel/UCFKdonzeImi53hfBmeq-SaQ"
+         target="_blank"
+         rel="noopener"
+         aria-label="Open AZADrg YouTube Channel">
+        <svg class="yt-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#ff0000"
+            d="M23.5 6.2s-.2-1.6-.8-2.3c-.8-.9-1.7-.9-2.1-1C17.6 2.7 12 2.7 12 2.7s-5.6 0-8.6.2c-.4.1-1.3.1-2.1 1C.7 4.6.5 6.2.5 6.2S.3 8 .3 9.8v1.4c0 1.8.2 3.6.2 3.6s.2 1.6.8 2.3c.8.9 1.9.9 2.4 1 1.7.2 7.3.2 7.3.2s5.6 0 8.6-.2c.4-.1 1.3-.1 2.1-1 .6-.7.8-2.3.8-2.3s.2-1.8.2-3.6V9.8c0-1.8-.2-3.6-.2-3.6zM9.8 14.6V7.8l6.4 3.4-6.4 3.4z"/>
+        </svg>
+        <span>YouTube Channel</span>
+      </a>
+    </div>
+
+    <ul>
+      <li><a href="afc500/overview.md#overview">Overview</a></li>
+      <li><a href="afc500/chamberbuild.md">Chamber Build</a></li>
+      <li><a href="afc500/ignition.md">Ignition & Stabilization</a></li>
+      <li><a href="afc500/operation.md">Operation</a></li>
+      <li><a href="afc500/docs/data-notes.html">Results</a></li>
+      <li><a href="afc500/docs/data-notes.html#improvements">Improvements</a></li>
+    </ul>
+
+  </div>
 </div>
-    
-<button id="afcReopen" class="afc-reopen" onclick="openAFC()">AFC-500</button>
-    
- 
+
+<button id="afcReopen" class="afc-reopen" onclick="openAFC()">
+  AFC-500
+</button>
+
 <script>
-  window.closeAFC = function() {
+  function closeAFC() {
     document.getElementById('afcPanel').style.display = 'none';
     document.getElementById('afcReopen').classList.add('show');
+  }
 
-    if (window.innerWidth <= 768) {
-      localStorage.setItem('afcClosed', 'true');
-    }
-  };
-
-  window.openAFC = function() {
-    document.getElementById('afcPanel').style.display = '';
+  function openAFC() {
+    document.getElementById('afcPanel').style.display = 'block';
     document.getElementById('afcReopen').classList.remove('show');
-    localStorage.removeItem('afcClosed');
-  };
-
-  window.onload = function() {
-    if (window.innerWidth <= 768 && localStorage.getItem('afcClosed') === 'true') {
-      document.getElementById('afcPanel').style.display = 'none';
-      document.getElementById('afcReopen').classList.add('show');
-    } else {
-      document.getElementById('afcPanel').style.display = '';
-      document.getElementById('afcReopen').classList.remove('show');
-    }
-  };
+  }
 </script>
   
 </body>
