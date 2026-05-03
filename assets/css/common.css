@@ -478,4 +478,10 @@ footer ul,
     display: block;
   }
 
-
+@media (max-width: 768px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
