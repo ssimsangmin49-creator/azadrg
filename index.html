@@ -706,7 +706,10 @@ by creating the conditions for controlled gas-phase oxidation of Synthetic Polym
   window.closeAFC = function() {
     document.getElementById('afcPanel').style.display = 'none';
     document.getElementById('afcReopen').classList.add('show');
-    localStorage.setItem('afcClosed', 'true');
+
+    if (window.innerWidth <= 768) {
+      localStorage.setItem('afcClosed', 'true');
+    }
   };
 
   window.openAFC = function() {
@@ -716,15 +719,16 @@ by creating the conditions for controlled gas-phase oxidation of Synthetic Polym
   };
 
   window.onload = function() {
-    if (localStorage.getItem('afcClosed') === 'true') {
+    if (window.innerWidth <= 768 && localStorage.getItem('afcClosed') === 'true') {
       document.getElementById('afcPanel').style.display = 'none';
       document.getElementById('afcReopen').classList.add('show');
     } else {
+      document.getElementById('afcPanel').style.display = '';
       document.getElementById('afcReopen').classList.remove('show');
     }
   };
 </script>
-
+  
 </body>
 </html>
 
