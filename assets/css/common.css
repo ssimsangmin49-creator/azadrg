@@ -322,6 +322,20 @@ footer ul,
   left: 0px;
 }
 
+/* PC 중앙 정렬 복구 */
+@media (min-width: 769px) {
+  body {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .container {
+    margin: 0 auto !important;
+    text-align: center;
+  }
+}
+
 /* =========================
    AFC-500 FLOAT PANEL
    ========================= */
