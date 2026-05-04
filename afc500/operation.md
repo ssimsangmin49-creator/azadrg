@@ -41,7 +41,7 @@ Human-in-the-loop thermal system
 ### Images
 ![Flame Stage](../images/flame/stage-02.jpg)
 
-![Description](../images/flame/wind.jpg)
+![Description](../images/flame/wind.png)
 
 ---
 
