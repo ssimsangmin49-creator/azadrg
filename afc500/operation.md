@@ -31,9 +31,9 @@ Human-in-the-loop thermal system
 ---
 
 ### Key Observations
-- Observation 1  
-- Observation 2  
-- Observation 3  
+- Observation 1  For outdoor use on windy days, the top lid is required. The wind crushes the flame curtain as shown in the image below.
+- Observation 2  When stopping the use of the chamber, the air compressor must be kept running until the last remaining embers are extinguished.
+- Observation 3  Flame Reading, Condition Tuning, and Stability Judgment are the essence of the Human Layer. They are also the most important parts of Operation.
 
 ---
 
