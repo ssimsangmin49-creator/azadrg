@@ -25,7 +25,8 @@ Short introduction or context.
 ---
 
 ### System Context
-Describe where this fits in the AFC-500 framework.
+
+Human-in-the-loop thermal system
 
 ---
 
@@ -40,12 +41,12 @@ Describe where this fits in the AFC-500 framework.
 ### Images
 ![Flame Stage](../images/flame/stage-02.jpg)
 
-![Description](../images/your-image-02.jpg)
+![Description](../images/flame/wind.jpg)
 
 ---
 
 ### Notes
-Additional remarks, anomalies, or field insights.
+This system has one more layer. That is the 'Human Control Layer'.
 
 ---
 
