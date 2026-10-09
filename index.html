@@ -661,8 +661,13 @@ by creating the conditions for controlled gas-phase oxidation of Synthetic Polym
 
     const html = items.filter(Boolean).join("");
     list.innerHTML = html || `<li>No valid posts.</li>`;
-  </script>
 
+  } catch (error) {
+    console.error("Blog loading error:", error);
+    list.innerHTML = `<li>Unable to load recent posts.</li>`;
+  }
+})();
+</script>
   
 <!-- =========================
      AFC-500 FLOAT PANEL
