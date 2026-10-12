@@ -350,11 +350,110 @@
   color: #60a5fa;
 }
     
+
+    /* ===== AZADrg dual-site navigator ===== */
+    .site-switcher {
+      position: fixed;
+      z-index: 20;
+      top: 294px;
+      left: 24px;
+      width: 252px;
+      padding: 17px;
+      background: rgba(8, 19, 42, 0.93);
+      border: 1px solid rgba(119, 153, 199, 0.20);
+      border-radius: 20px;
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.18);
+      font-family: Georgia, "Times New Roman", serif;
+      text-align: left;
+      line-height: 1.45;
+    }
+    .site-switcher__eyebrow {
+      margin: 0 0 12px;
+      color: #9bb2d1;
+      font: 700 10px/1.5 Arial, sans-serif;
+      letter-spacing: 0.16em;
+    }
+    .site-switcher__card {
+      display: block;
+      margin-top: 10px;
+      padding: 12px 13px;
+      border: 1px solid rgba(118, 151, 193, 0.27);
+      border-radius: 12px;
+      background: rgba(24, 40, 68, 0.83);
+      color: #eef5ff;
+      text-decoration: none;
+      transition: background .2s ease, border-color .2s ease, transform .2s ease;
+    }
+    .site-switcher__card:hover,
+    .site-switcher__card:focus-visible {
+      background: #203657;
+      border-color: #7aa9d1;
+      transform: translateY(-1px);
+      outline: none;
+    }
+    .site-switcher__card--net { border-color: rgba(94, 174, 125, 0.38); }
+    .site-switcher__card--net:hover,
+    .site-switcher__card--net:focus-visible { border-color: #70c69b; }
+    .site-switcher__name {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      font-size: 17px;
+      font-weight: bold;
+      letter-spacing: -.02em;
+    }
+    .site-switcher__name .cloud { color: #71c7f2; }
+    .site-switcher__name .net { color: #78c997; }
+    .site-switcher__arrow { color: #91a9c7; font: 16px Arial, sans-serif; }
+    .site-switcher__role { display: block; margin-top: 5px; color: #d3dfef; font-size: 12px; }
+    .site-switcher__desc { display: block; margin-top: 3px; color: #9eafc9; font-size: 11px; line-height: 1.5; }
+    .site-switcher__footer {
+      margin: 14px 0 0;
+      text-align: center;
+      color: #9bafca;
+      font-size: 11px;
+      letter-spacing: .01em;
+    }
+    @media (max-width: 1500px) {
+      .site-switcher {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: min(100%, 520px);
+        margin: 0 auto 24px;
+      }
+      .site-switcher__cards { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; }
+      .site-switcher__card { margin-top: 0; }
+    }
+    @media (max-width: 540px) {
+      .site-switcher { padding: 13px; margin-bottom: 18px; }
+      .site-switcher__cards { grid-template-columns: 1fr; }
+      .site-switcher__name { font-size: 16px; }
+    }
   </style>
   
 </head>
 
 <body>
+  <!-- AZADrg: two sites, one purpose -->
+  <nav class="site-switcher" aria-label="AZADrg websites">
+    <p class="site-switcher__eyebrow">AZADrg · EXPLORE</p>
+    <div class="site-switcher__cards">
+      <a class="site-switcher__card" href="https://azadrg.cloud/" aria-current="page">
+        <span class="site-switcher__name"><span>azadrg<span class="cloud">.cloud</span></span><span class="site-switcher__arrow" aria-hidden="true">↗</span></span>
+        <span class="site-switcher__role">Technical Reference</span>
+        <span class="site-switcher__desc">Framework · Architecture · Field Evidence</span>
+      </a>
+      <a class="site-switcher__card site-switcher__card--net" href="https://azadrg.net/" target="_blank" rel="noopener noreferrer">
+        <span class="site-switcher__name"><span>azadrg<span class="net">.net</span></span><span class="site-switcher__arrow" aria-hidden="true">↗</span></span>
+        <span class="site-switcher__role">Projects &amp; Participation</span>
+        <span class="site-switcher__desc">Applications · Network · Get Involved</span>
+      </a>
+    </div>
+    <p class="site-switcher__footer">Different roles. One purpose.</p>
+  </nav>
+
   <main class="container">
   <section class="hero">
     <div class="hero">
@@ -732,4 +831,3 @@ by creating the conditions for controlled gas-phase oxidation of Synthetic Polym
   
 </body>
 </html>
-
