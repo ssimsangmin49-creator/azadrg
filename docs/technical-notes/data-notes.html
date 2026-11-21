@@ -145,6 +145,25 @@
       font-size: 12px;
       color: var(--muted)
     }
+    .figure {
+      margin: 18px 0 8px
+    }
+    .figure a {
+      display: block;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden
+    }
+    .figure img {
+      display: block;
+      width: 100%;
+      height: auto
+    }
+    .figure figcaption {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 8px
+    }
     footer {
       font-size: 12px;
       color: var(--muted);
@@ -195,6 +214,12 @@
     <div class="step"><strong>Authorized Users</strong><small>Host authorities & AZADrg</small></div>
   </div>
   <p>Each participating unit generates time-stamped operating records. An IoT edge module collects available sensor readings and transfers them to a mobile device, which can relay records to a web server when connectivity is available. The server supports long-term storage, comparison, review and controlled sharing. Offline buffering and retransmission should be considered during development.</p>
+  <figure class="figure">
+    <a href="images/concept.png" target="_blank" rel="noopener">
+      <img src="images/concept.png" width="1920" height="1080" alt="Infographic of the AFC/SSOF IoT data flow: field units connect through an IoT edge module to mobile monitoring, then to a secure web server, and on to shared access for regulatory authorities and AZADrg, with the main data items listed along the bottom.">
+    </a>
+    <figcaption>Figure 1. Field Data Collection &amp; Sharing: from field units to mobile, web server and shared access. Click to open full size.</figcaption>
+  </figure>
 </section>
 <div class="grid">
   <section class="panel">
@@ -236,6 +261,12 @@
   </div>
   <p>Potential anomalies may arise from a sensor or communication fault, a genuine change in operating conditions, an unusual but valid operating event, or an unresolved cause. The detection algorithm should <strong>flag and classify</strong> such records rather than silently delete or overwrite them.</p>
   <p>Early implementation can begin with transparent rules and statistical thresholds. More advanced algorithms may be evaluated only after sufficient labeled field data becomes available.</p>
+  <figure class="figure">
+    <a href="images/platform.png" target="_blank" rel="noopener">
+      <img src="images/platform.png" width="1920" height="1080" alt="Infographic of the AZADrg AFC/SSOF Data Platform concept: five steps from data collection and transmission through anomaly detection and validation to verified data, with an example website structure, an example dashboard preview and implementation steps." loading="lazy">
+    </a>
+    <figcaption>Figure 2. AFC/SSOF Data Platform Architecture: proposed platform concept. Website and dashboard panels are illustrative examples. Click to open full size.</figcaption>
+  </figure>
 </section>
 <section class="panel">
   <h2>5. Verification, Traceability & Data Status</h2>
@@ -269,6 +300,12 @@
     </div>
   </div>
   <div class="notice">A verified operating record is not automatically a verified emissions reduction, carbon credit, plastic credit or financial asset. Each claim requires its own evidence and applicable assessment standard.</div>
+  <figure class="figure">
+    <a href="images/value.png" target="_blank" rel="noopener">
+      <img src="images/value.png" width="1920" height="1080" alt="Infographic of data validation and value creation: accumulated field data passes through an anomaly detection algorithm that separates sensor errors from operational abnormalities, then human or institutional verification produces a verification record and validated data, leading to technical, public and economic potential value." loading="lazy">
+    </a>
+    <figcaption>Figure 3. Data Validation &amp; Value Creation: from field operation data to reviewed data and its potential value. Click to open full size.</figcaption>
+  </figure>
 </section>
 <section class="panel">
   <h2>7. University & Research Collaboration</h2>
@@ -281,6 +318,12 @@
     <li>Reproducible documentation and field testing with local partners</li>
   </ul>
   <p><strong>Research principle:</strong> publish methods, assumptions, limits and results clearly, while defining field-data access and usage rights with the host community or country and participating organizations.</p>
+  <figure class="figure">
+    <a href="images/research.png" target="_blank" rel="noopener">
+      <img src="images/research.png" width="1920" height="1080" alt="Infographic of the AFC/SSOF field data platform for research and development: a five-step flow from field operation to verified data, the end-to-end data architecture, example data items, research themes for university collaboration, data value and role, collaboration approach and expected outcomes." loading="lazy">
+    </a>
+    <figcaption>Figure 4. University Research &amp; Development Collaboration: how research partners can work with the field data framework. Click to open full size.</figcaption>
+  </figure>
 </section>
 <section class="panel">
   <h2>8. Proposed Minimum Data Schema</h2>
